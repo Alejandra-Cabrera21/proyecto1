@@ -1,28 +1,20 @@
 import express from "express";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
-import sql from "mssql";
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
 
-// Configuración de conexión a SQL Server
-const dbConfig = {
-  user: "sa",                // o el usuario que configures (si usas autenticación SQL)
-  password: "tu_password",   // si usas autenticación de SQL
-  server: "ALECABRERA\\SQLEXPRESS", // el que te aparece en SSMS
-  database: "proyecto1",
-  options: {
-    encrypt: false,
-    trustServerCertificate: true
-  }
-};
-
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
-// Ruta para analizar sentimientos y guardar en SQL Server
+// Ruta raíz de prueba
+app.get("/", (req, res) => {
+  res.send("✅ Backend de análisis emocional está corriendo en Render");
+});
+
+// Ruta para analizar sentimientos
 app.post("/analizar", async (req, res) => {
   try {
     const { usuario, mensaje } = req.body;
@@ -50,21 +42,16 @@ app.post("/analizar", async (req, res) => {
     const data = await response.json();
     const sentimiento = data.choices?.[0]?.message?.content?.trim();
 
-    // Guardar en SQL Server
-    const pool = await sql.connect(dbConfig);
-    await pool.request()
-      .input("Usuario", sql.NVarChar, usuario || "anonimo")
-      .input("Mensaje", sql.NVarChar, mensaje)
-      .input("Sentimiento", sql.NVarChar, sentimiento)
-      .query("INSERT INTO AnalisisEmociones (Usuario, Mensaje, Sentimiento) VALUES (@Usuario, @Mensaje, @Sentimiento)");
-
-    res.json({ mensaje, sentimiento });
+    // (Por ahora no guardar en SQL porque Render no tiene acceso a tu SQL local)
+    res.json({ usuario, mensaje, sentimiento });
   } catch (error) {
     console.error("❌ Error:", error);
-    res.status(500).json({ error: "Error al analizar o guardar el mensaje" });
+    res.status(500).json({ error: "Error al analizar el mensaje" });
   }
 });
 
-// Levantar servidor
+// Levantar servidor con puerto dinámico
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`✅ Servidor corriendo en http://localhost:${PORT}`));
+app.listen(PORT, () => {
+  console.log(`✅ Servidor corriendo en puerto ${PORT}`);
+});

@@ -7,7 +7,7 @@ async function analizar() {
   }
 
   try {
-    const response = await fetch("http://localhost:3000/analizar", {  // tu backend local
+    const response = await fetch("https://proyectoo1.onrender.com/analizar", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ usuario: "alejandra", mensaje })
