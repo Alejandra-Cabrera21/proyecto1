@@ -1,11 +1,13 @@
 import express from "express";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
+import cors from "cors";  
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
