@@ -7,11 +7,12 @@ async function analizar() {
   }
 
   try {
-    const response = await fetch("https://proyecto1.onrender.com/analizar", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ usuario: "alejandra", mensaje }),
-    });
+const response = await fetch("https://proyectoo1.onrender.com/analizar", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ usuario: "alejandra", mensaje }),
+});
+
 
     const data = await response.json();
 
