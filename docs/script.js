@@ -7,12 +7,11 @@ async function analizar() {
   }
 
   try {
-const response = await fetch("https://proyectoo1.onrender.com/analizar", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ usuario: "alejandra", mensaje }),
-});
-
+    const response = await fetch("https://proyectoo1.onrender.com/analizar", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ usuario: "alejandra", mensaje }),
+    });
 
     const data = await response.json();
 
@@ -21,7 +20,6 @@ const response = await fetch("https://proyectoo1.onrender.com/analizar", {
       <p><b>Sentimiento:</b> ${data.sentimiento || "No detectado"}</p>
       <p><b>Retroalimentación:</b> ${data.feedback}</p>
     `;
-
   } catch (error) {
     console.error("Error:", error);
     alert("No se pudo conectar con el servidor");
