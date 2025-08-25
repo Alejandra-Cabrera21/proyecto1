@@ -1,19 +1,19 @@
 import express from "express";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
-import cors from "cors";  
+import cors from "cors";
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors()); // 🔥 Habilita CORS para todas las peticiones
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 // Ruta raíz de prueba
 app.get("/", (req, res) => {
-  res.send("✅ Backend de análisis emocional está corriendo en Render");
+  res.send("✅ Backend de análisis emocional está corriendo en Render con CORS habilitado");
 });
 
 // Ruta para analizar sentimientos
@@ -21,7 +21,7 @@ app.post("/analizar", async (req, res) => {
   try {
     const { usuario, mensaje } = req.body;
 
-    // Llamar a OpenAI
+    // Llamada a la API de OpenAI
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -33,7 +33,7 @@ app.post("/analizar", async (req, res) => {
         messages: [
           {
             role: "system",
-            content: "Eres un analizador de emociones. Responde con una de estas etiquetas: 'positivo', 'negativo', 'neutral', 'tristeza', 'alegría', 'enojo', 'miedo'."
+            content: "Eres un analizador de emociones. Responde solo con una de estas etiquetas: 'positivo', 'negativo', 'neutral', 'tristeza', 'alegría', 'enojo', 'miedo'."
           },
           { role: "user", content: mensaje }
         ],
@@ -44,7 +44,6 @@ app.post("/analizar", async (req, res) => {
     const data = await response.json();
     const sentimiento = data.choices?.[0]?.message?.content?.trim();
 
-    // (Por ahora no guardar en SQL porque Render no tiene acceso a tu SQL local)
     res.json({ usuario, mensaje, sentimiento });
   } catch (error) {
     console.error("❌ Error:", error);
@@ -52,7 +51,7 @@ app.post("/analizar", async (req, res) => {
   }
 });
 
-// Levantar servidor con puerto dinámico
+// Servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`✅ Servidor corriendo en puerto ${PORT}`);
