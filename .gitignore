@@ -1,0 +1,4 @@
+# Ignorar archivos de configuración privada
+.env
+*.env
+node_modules/
