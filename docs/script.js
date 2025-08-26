@@ -11,22 +11,25 @@ async function analizar() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ usuario: "alejandra", mensaje }),
-      credentials: "omit" // 🔥 evita problemas de CORS
     });
 
-    // Si Render estaba "dormido"
+    // Si Render está "despertando"
     if (!response.ok) {
-      console.log("⚠️ Servidor despertando... reintentando en 5s");
-      await new Promise(r => setTimeout(r, 5000));
+      console.warn("⚠️ Servidor despertando... reintentando en 5s");
+      await new Promise((r) => setTimeout(r, 5000));
       response = await fetch("https://proyectoo1.onrender.com/analizar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ usuario: "alejandra", mensaje }),
-        credentials: "omit"
       });
     }
 
     const data = await response.json();
+
+    // 🔎 Depuración
+    console.log("📩 Respuesta completa del backend:", data);
+    console.log("👉 Sentimiento detectado:", data.sentimiento);
+    console.log("👉 Feedback generado:", data.feedback);
 
     document.getElementById("resultado").innerHTML = `
       <p><b>Mensaje:</b> ${mensaje}</p>

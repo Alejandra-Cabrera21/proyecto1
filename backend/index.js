@@ -7,26 +7,41 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
-
-// ✅ Habilitar CORS SOLO para tu frontend
 app.use(
   cors({
-    origin: "https://alejandra-cabrera21.github.io",
+    origin: "https://alejandra-cabrera21.github.io", 
   })
 );
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
-// Ruta raíz de prueba
+// Diccionario de retroalimentación
+const feedbacks = {
+  positivo: "🌟 ¡Excelente! Sigue disfrutando de esta buena energía.",
+  alegria: "😃 ¡Qué bonito que estés alegre! Disfruta ese momento.",
+  negativo: "💭 Parece que estás pasando un mal momento. Todo mejora.",
+  tristeza: "💙 Está bien sentirse triste, tómate un respiro y cuida de ti.",
+  enojo: "😤 Respira hondo, el enojo pasará. Tú tienes el control.",
+  miedo: "🌈 No estás sola, el miedo es normal. Confía en ti.",
+  neutral: "😌 Todo tranquilo, aprovecha este momento de calma.",
+  no_detectado:
+    "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido.",
+};
+
+// Lista de etiquetas válidas
+const etiquetasValidas = ["positivo", "negativo", "neutral", "tristeza", "alegria", "enojo", "miedo"];
+
+// Ruta raíz
 app.get("/", (req, res) => {
   res.send("✅ Backend corriendo en Render con OpenAI y CORS habilitado");
 });
 
-// Ruta para analizar sentimientos
+// Ruta principal
 app.post("/analizar", async (req, res) => {
   try {
     const { usuario, mensaje } = req.body;
 
+    // Llamada a OpenAI
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -39,61 +54,40 @@ app.post("/analizar", async (req, res) => {
           {
             role: "system",
             content:
-              "Eres un analizador de emociones en ESPAÑOL. Responde SOLO con una palabra exacta de esta lista: positivo, negativo, neutral, tristeza, alegría, enojo, miedo.",
+              "Responde ÚNICAMENTE con una palabra en minúsculas de esta lista: positivo, negativo, neutral, tristeza, alegria, enojo, miedo. Nada más, sin frases adicionales.",
           },
           { role: "user", content: mensaje },
         ],
-        max_tokens: 3,
+        max_tokens: 5,
         temperature: 0,
       }),
     });
 
     const data = await response.json();
-    console.log("🔎 OpenAI respondió:", data.choices?.[0]?.message?.content);
+    console.log("🔎 OpenAI devolvió:", data);
 
-    // Normalizar respuesta
     let sentimiento = (data.choices?.[0]?.message?.content || "")
       .toLowerCase()
       .trim();
 
-    const etiquetasValidas = [
-      "positivo",
-      "negativo",
-      "neutral",
-      "tristeza",
-      "alegría",
-      "enojo",
-      "miedo",
-    ];
-
-    let encontrada = etiquetasValidas.find((etiqueta) =>
-      sentimiento.includes(etiqueta)
-    );
-
-    if (!encontrada) encontrada = "no_detectado";
-
-    // Retroalimentación
-    const feedbacks = {
-      positivo: "🌟 ¡Excelente! Sigue disfrutando de esta buena energía.",
-      alegría: "😃 ¡Qué bonito que estés alegre! Disfruta ese momento.",
-      negativo: "💭 Parece que estás pasando un mal momento. Todo mejora.",
-      tristeza: "💙 Está bien sentirse triste, tómate un respiro y cuida de ti.",
-      enojo: "😤 Respira hondo, el enojo pasará. Tú tienes el control.",
-      miedo: "🌈 No estás sola, el miedo es normal. Confía en ti.",
-      neutral: "😌 Todo tranquilo, aprovecha este momento de calma.",
-      no_detectado:
-        "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido.",
-    };
+    // Si OpenAI devuelve algo como "El sentimiento es positivo."
+    // usamos regex para encontrar la palabra
+    if (!etiquetasValidas.includes(sentimiento)) {
+      const encontrada = etiquetasValidas.find((etq) =>
+        sentimiento.includes(etq)
+      );
+      sentimiento = encontrada || "no_detectado";
+    }
 
     res.json({
       usuario,
       mensaje,
-      sentimiento: encontrada,
-      feedback: feedbacks[encontrada],
+      sentimiento,
+      feedback: feedbacks[sentimiento],
     });
   } catch (error) {
     console.error("❌ Error en /analizar:", error);
-    res.status(500).json({ error: "Error al analizar el mensaje" });
+    res.status(500).json({ error: "Error al analizar el mensaje con OpenAI" });
   }
 });
 
