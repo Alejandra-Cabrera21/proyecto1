@@ -1,0 +1,41 @@
+[
+  { "texto": "me siento feliz", "sentimiento": "alegría" },
+  { "texto": "qué bonito día", "sentimiento": "positivo" },
+  { "texto": "estoy muy enojado", "sentimiento": "enojo" },
+  { "texto": "tengo miedo de fallar", "sentimiento": "miedo" },
+  { "texto": "me siento triste y solo", "sentimiento": "tristeza" },
+  { "texto": "no sé qué pasará", "sentimiento": "neutral" },
+  { "texto": "esto está horrible", "sentimiento": "negativo" },
+
+  { "texto": "estoy muy feliz con mis amigos", "sentimiento": "alegría" },
+  { "texto": "me siento orgulloso de lo que logré", "sentimiento": "positivo" },
+  { "texto": "me molesta que no me escuchen", "sentimiento": "enojo" },
+  { "texto": "tengo miedo a la oscuridad", "sentimiento": "miedo" },
+  { "texto": "perdí algo importante y me siento mal", "sentimiento": "tristeza" },
+  { "texto": "no tengo ni frío ni calor", "sentimiento": "neutral" },
+  { "texto": "nada me sale bien últimamente", "sentimiento": "negativo" },
+
+  { "texto": "me siento emocionado por el futuro", "sentimiento": "alegría" },
+  { "texto": "qué agradable sorpresa recibir buenas noticias", "sentimiento": "positivo" },
+  { "texto": "me hierve la sangre cuando veo injusticias", "sentimiento": "enojo" },
+  { "texto": "me asusta hablar en público", "sentimiento": "miedo" },
+  { "texto": "hoy no tengo ganas de nada", "sentimiento": "tristeza" },
+  { "texto": "es un día cualquiera, sin nada especial", "sentimiento": "neutral" },
+  { "texto": "todo está saliendo mal", "sentimiento": "negativo" },
+
+  { "texto": "me siento alegre al ver a mi familia", "sentimiento": "alegría" },
+  { "texto": "es un buen momento para agradecer", "sentimiento": "positivo" },
+  { "texto": "me fastidia que hagan ruido todo el tiempo", "sentimiento": "enojo" },
+  { "texto": "me da miedo perder a quienes amo", "sentimiento": "miedo" },
+  { "texto": "me siento deprimido y sin ánimos", "sentimiento": "tristeza" },
+  { "texto": "no estoy ni bien ni mal", "sentimiento": "neutral" },
+  { "texto": "siento que todo es negativo en mi vida", "sentimiento": "negativo" },
+
+  { "texto": "qué felicidad tan grande", "sentimiento": "alegría" },
+  { "texto": "me siento lleno de energía positiva", "sentimiento": "positivo" },
+  { "texto": "me da rabia que no cumplan su palabra", "sentimiento": "enojo" },
+  { "texto": "me preocupa no poder dormir", "sentimiento": "miedo" },
+  { "texto": "siento un vacío enorme en mi corazón", "sentimiento": "tristeza" },
+  { "texto": "todo está normal y tranquilo", "sentimiento": "neutral" },
+  { "texto": "esto es un completo desastre", "sentimiento": "negativo" }
+]
