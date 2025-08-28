@@ -1,4 +1,5 @@
-[
+{
+     "ejemplos":[
   { "texto": "me siento feliz", "sentimiento": "alegría" },
   { "texto": "qué bonito día", "sentimiento": "positivo" },
   { "texto": "estoy muy enojado", "sentimiento": "enojo" },
@@ -38,4 +39,14 @@
   { "texto": "siento un vacío enorme en mi corazón", "sentimiento": "tristeza" },
   { "texto": "todo está normal y tranquilo", "sentimiento": "neutral" },
   { "texto": "esto es un completo desastre", "sentimiento": "negativo" }
-]
+],
+  "palabras": [
+    { "palabras": ["feliz", "alegre", "contento", "emocionado"], "sentimiento": "alegría" },
+    { "palabras": ["triste", "deprimido", "melancólico"], "sentimiento": "tristeza" },
+    { "palabras": ["enojado", "molesto", "furioso"], "sentimiento": "enojo" },
+    { "palabras": ["miedo", "asustado", "preocupado"], "sentimiento": "miedo" },
+    { "palabras": ["neutral", "indiferente"], "sentimiento": "neutral" },
+    { "palabras": ["positivo", "optimista"], "sentimiento": "positivo" },
+    { "palabras": ["negativo", "pésimo"], "sentimiento": "negativo" }
+  ]
+}
