@@ -32,7 +32,7 @@ app.post("/analizar", async (req, res) => {
   try {
     const { usuario, mensaje } = req.body;
 
-    // 1️⃣ Construir ejemplos para el prompt
+    // 1️⃣ Construir ejemplos
     let ejemplosTexto = ejemplos
       .map(e => `Texto: "${e.texto}" → {"sentimiento":"${e.sentimiento}"}`)
       .join("\n");
@@ -49,7 +49,7 @@ app.post("/analizar", async (req, res) => {
         messages: [
           {
             role: "system",
-            content: "Eres un analizador de emociones en ESPAÑOL. Devuelve SOLO en formato JSON válido con la estructura {\"sentimiento\":\"etiqueta\"}. Etiquetas válidas: positivo, negativo, neutral, tristeza, alegría, enojo, miedo."
+            content: "Eres un analizador de emociones en ESPAÑOL. Responde SOLO en formato JSON con la estructura {\"sentimiento\":\"etiqueta\"}. Etiquetas válidas: positivo, negativo, neutral, tristeza, alegría, enojo, miedo."
           },
           {
             role: "user",
@@ -72,19 +72,19 @@ app.post("/analizar", async (req, res) => {
     let sentimiento = "no_detectado";
     try {
       const raw = data.choices?.[0]?.message?.content || "";
-      const parsed = JSON.parse(raw);
+      const parsed = JSON.parse(raw);   // 👈 si viene JSON válido
       if (parsed.sentimiento) {
         sentimiento = parsed.sentimiento.toLowerCase().trim();
       }
     } catch (err) {
-      console.warn("⚠️ No vino JSON, usando texto:", err);
+      console.warn("⚠️ No vino JSON, buscando en texto...");
       const raw = (data.choices?.[0]?.message?.content || "").toLowerCase();
       const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo"];
       const encontrada = etiquetas.find(e => raw.includes(e));
       sentimiento = encontrada || "no_detectado";
     }
 
-    // 4️⃣ Fallback con palabras clave (dataset.palabras)
+    // 4️⃣ Fallback con dataset.palabras
     if (sentimiento === "no_detectado") {
       for (const entrada of palabras) {
         if (entrada.palabras.some(p => mensaje.toLowerCase().includes(p))) {
