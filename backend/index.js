@@ -33,10 +33,10 @@ app.post("/analizar", async (req, res) => {
 
     // 1️⃣ Construir ejemplos para el prompt
     let ejemplosTexto = ejemplos
-      .map(e => `Texto: "${e.texto}" → Sentimiento: ${e.sentimiento}`)
+      .map(e => `Texto: "${e.texto}" → {"sentimiento":"${e.sentimiento}"}`)
       .join("\n");
 
-    // 2️⃣ Consultar OpenAI
+    // 2️⃣ Consultar OpenAI con salida JSON forzada
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -45,10 +45,11 @@ app.post("/analizar", async (req, res) => {
       },
       body: JSON.stringify({
         model: "gpt-4o-mini",
+        response_format: { type: "json_object" },   // 👈 fuerza JSON
         messages: [
           {
             role: "system",
-            content: "Eres un analizador de emociones en ESPAÑOL. Devuelve SOLO una de estas etiquetas: positivo, negativo, neutral, tristeza, alegría, enojo, miedo."
+            content: "Eres un analizador de emociones en ESPAÑOL. Responde SOLO en formato JSON {\"sentimiento\":\"etiqueta\"}. Etiquetas válidas: positivo, negativo, neutral, tristeza, alegría, enojo, miedo."
           },
           {
             role: "user",
@@ -56,18 +57,28 @@ app.post("/analizar", async (req, res) => {
           },
           {
             role: "user",
-            content: mensaje
+            content: mensaje   // 👈 el mensaje del usuario
           }
         ],
-        max_tokens: 10,
-        temperature: 0,
+        max_tokens: 20,
+        temperature: 0
       }),
     });
 
     const data = await response.json();
-    let sentimiento = data.choices?.[0]?.message?.content?.trim().toLowerCase();
 
-    // 3️⃣ Fallback con palabras clave si OpenAI falla
+    // 3️⃣ Parsear JSON seguro
+    let sentimiento = "no_detectado";
+    try {
+      const parsed = JSON.parse(data.choices?.[0]?.message?.content || "{}");
+      if (parsed.sentimiento) {
+        sentimiento = parsed.sentimiento.toLowerCase().trim();
+      }
+    } catch (err) {
+      console.error("❌ Error parseando JSON de OpenAI:", err);
+    }
+
+    // 4️⃣ Fallback con palabras clave si OpenAI falla
     if (!sentimiento || sentimiento === "no_detectado") {
       for (const entrada of palabras) {
         if (entrada.palabras.some(p => mensaje.toLowerCase().includes(p))) {
@@ -77,7 +88,7 @@ app.post("/analizar", async (req, res) => {
       }
     }
 
-    // 4️⃣ Feedback motivacional
+    // 5️⃣ Feedback motivacional
     const feedbacks = {
       positivo: "🌟 ¡Excelente! Sigue disfrutando de esta buena energía.",
       alegría: "😃 ¡Qué bonito que estés alegre! Disfruta ese momento.",
@@ -97,7 +108,7 @@ app.post("/analizar", async (req, res) => {
     });
 
   } catch (error) {
-    console.error("❌ Error:", error);
+    console.error("❌ Error en /analizar:", error);
     res.status(500).json({ error: "Error al analizar el mensaje" });
   }
 });
