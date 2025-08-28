@@ -1,52 +1,2860 @@
 {
-     "ejemplos":[
-  { "texto": "me siento feliz", "sentimiento": "alegría" },
-  { "texto": "qué bonito día", "sentimiento": "positivo" },
-  { "texto": "estoy muy enojado", "sentimiento": "enojo" },
-  { "texto": "tengo miedo de fallar", "sentimiento": "miedo" },
-  { "texto": "me siento triste y solo", "sentimiento": "tristeza" },
-  { "texto": "no sé qué pasará", "sentimiento": "neutral" },
-  { "texto": "esto está horrible", "sentimiento": "negativo" },
-
-  { "texto": "estoy muy feliz con mis amigos", "sentimiento": "alegría" },
-  { "texto": "me siento orgulloso de lo que logré", "sentimiento": "positivo" },
-  { "texto": "me molesta que no me escuchen", "sentimiento": "enojo" },
-  { "texto": "tengo miedo a la oscuridad", "sentimiento": "miedo" },
-  { "texto": "perdí algo importante y me siento mal", "sentimiento": "tristeza" },
-  { "texto": "no tengo ni frío ni calor", "sentimiento": "neutral" },
-  { "texto": "nada me sale bien últimamente", "sentimiento": "negativo" },
-
-  { "texto": "me siento emocionado por el futuro", "sentimiento": "alegría" },
-  { "texto": "qué agradable sorpresa recibir buenas noticias", "sentimiento": "positivo" },
-  { "texto": "me hierve la sangre cuando veo injusticias", "sentimiento": "enojo" },
-  { "texto": "me asusta hablar en público", "sentimiento": "miedo" },
-  { "texto": "hoy no tengo ganas de nada", "sentimiento": "tristeza" },
-  { "texto": "es un día cualquiera, sin nada especial", "sentimiento": "neutral" },
-  { "texto": "todo está saliendo mal", "sentimiento": "negativo" },
-
-  { "texto": "me siento alegre al ver a mi familia", "sentimiento": "alegría" },
-  { "texto": "es un buen momento para agradecer", "sentimiento": "positivo" },
-  { "texto": "me fastidia que hagan ruido todo el tiempo", "sentimiento": "enojo" },
-  { "texto": "me da miedo perder a quienes amo", "sentimiento": "miedo" },
-  { "texto": "me siento deprimido y sin ánimos", "sentimiento": "tristeza" },
-  { "texto": "no estoy ni bien ni mal", "sentimiento": "neutral" },
-  { "texto": "siento que todo es negativo en mi vida", "sentimiento": "negativo" },
-
-  { "texto": "qué felicidad tan grande", "sentimiento": "alegría" },
-  { "texto": "me siento lleno de energía positiva", "sentimiento": "positivo" },
-  { "texto": "me da rabia que no cumplan su palabra", "sentimiento": "enojo" },
-  { "texto": "me preocupa no poder dormir", "sentimiento": "miedo" },
-  { "texto": "siento un vacío enorme en mi corazón", "sentimiento": "tristeza" },
-  { "texto": "todo está normal y tranquilo", "sentimiento": "neutral" },
-  { "texto": "esto es un completo desastre", "sentimiento": "negativo" }
-],
+  "ejemplos": [
+    {
+      "texto": "Estoy muy feliz 1",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 2",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 3",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 4",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 5",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 6",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 7",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 8",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 9",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 10",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 11",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 12",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 13",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 14",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 15",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 16",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 17",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 18",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 19",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 20",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 21",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 22",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 23",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 24",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 25",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 26",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 27",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 28",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 29",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 30",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 31",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 32",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 33",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 34",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 35",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 36",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 37",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 38",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 39",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 40",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 41",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 42",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 43",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 44",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 45",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 46",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 47",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 48",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 49",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 50",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 51",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 52",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 53",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 54",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 55",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 56",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 57",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 58",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 59",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 60",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 61",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 62",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 63",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 64",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 65",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 66",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 67",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 68",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 69",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 70",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 71",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 72",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 73",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 74",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 75",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 76",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 77",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 78",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 79",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 80",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 81",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 82",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 83",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 84",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 85",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 86",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 87",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 88",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 89",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 90",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 91",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 92",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 93",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 94",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 95",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 96",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 97",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 98",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 99",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Estoy muy feliz 100",
+      "sentimiento": "alegría"
+    },
+    {
+      "texto": "Me siento positivo 1",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 2",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 3",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 4",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 5",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 6",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 7",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 8",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 9",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 10",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 11",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 12",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 13",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 14",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 15",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 16",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 17",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 18",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 19",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 20",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 21",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 22",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 23",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 24",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 25",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 26",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 27",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 28",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 29",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 30",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 31",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 32",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 33",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 34",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 35",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 36",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 37",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 38",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 39",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 40",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 41",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 42",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 43",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 44",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 45",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 46",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 47",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 48",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 49",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 50",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 51",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 52",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 53",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 54",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 55",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 56",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 57",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 58",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 59",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 60",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 61",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 62",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 63",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 64",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 65",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 66",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 67",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 68",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 69",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 70",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 71",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 72",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 73",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 74",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 75",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 76",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 77",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 78",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 79",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 80",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 81",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 82",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 83",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 84",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 85",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 86",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 87",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 88",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 89",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 90",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 91",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 92",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 93",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 94",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 95",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 96",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 97",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 98",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 99",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Me siento positivo 100",
+      "sentimiento": "positivo"
+    },
+    {
+      "texto": "Estoy enojado 1",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 2",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 3",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 4",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 5",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 6",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 7",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 8",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 9",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 10",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 11",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 12",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 13",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 14",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 15",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 16",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 17",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 18",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 19",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 20",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 21",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 22",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 23",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 24",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 25",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 26",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 27",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 28",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 29",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 30",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 31",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 32",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 33",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 34",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 35",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 36",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 37",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 38",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 39",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 40",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 41",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 42",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 43",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 44",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 45",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 46",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 47",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 48",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 49",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 50",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 51",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 52",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 53",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 54",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 55",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 56",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 57",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 58",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 59",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 60",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 61",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 62",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 63",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 64",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 65",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 66",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 67",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 68",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 69",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 70",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 71",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 72",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 73",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 74",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 75",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 76",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 77",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 78",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 79",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 80",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 81",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 82",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 83",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 84",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 85",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 86",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 87",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 88",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 89",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 90",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 91",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 92",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 93",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 94",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 95",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 96",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 97",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 98",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 99",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Estoy enojado 100",
+      "sentimiento": "enojo"
+    },
+    {
+      "texto": "Tengo miedo 1",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 2",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 3",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 4",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 5",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 6",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 7",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 8",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 9",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 10",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 11",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 12",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 13",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 14",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 15",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 16",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 17",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 18",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 19",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 20",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 21",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 22",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 23",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 24",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 25",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 26",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 27",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 28",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 29",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 30",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 31",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 32",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 33",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 34",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 35",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 36",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 37",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 38",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 39",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 40",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 41",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 42",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 43",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 44",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 45",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 46",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 47",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 48",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 49",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 50",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 51",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 52",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 53",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 54",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 55",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 56",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 57",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 58",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 59",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 60",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 61",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 62",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 63",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 64",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 65",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 66",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 67",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 68",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 69",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 70",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 71",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 72",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 73",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 74",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 75",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 76",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 77",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 78",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 79",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 80",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 81",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 82",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 83",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 84",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 85",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 86",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 87",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 88",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 89",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 90",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 91",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 92",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 93",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 94",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 95",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 96",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 97",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 98",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 99",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Tengo miedo 100",
+      "sentimiento": "miedo"
+    },
+    {
+      "texto": "Estoy triste 1",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 2",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 3",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 4",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 5",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 6",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 7",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 8",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 9",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 10",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 11",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 12",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 13",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 14",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 15",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 16",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 17",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 18",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 19",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 20",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 21",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 22",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 23",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 24",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 25",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 26",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 27",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 28",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 29",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 30",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 31",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 32",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 33",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 34",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 35",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 36",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 37",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 38",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 39",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 40",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 41",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 42",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 43",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 44",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 45",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 46",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 47",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 48",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 49",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 50",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 51",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 52",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 53",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 54",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 55",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 56",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 57",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 58",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 59",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 60",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 61",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 62",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 63",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 64",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 65",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 66",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 67",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 68",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 69",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 70",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 71",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 72",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 73",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 74",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 75",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 76",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 77",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 78",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 79",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 80",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 81",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 82",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 83",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 84",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 85",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 86",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 87",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 88",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 89",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 90",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 91",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 92",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 93",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 94",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 95",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 96",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 97",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 98",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 99",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy triste 100",
+      "sentimiento": "tristeza"
+    },
+    {
+      "texto": "Estoy neutral 1",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 2",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 3",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 4",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 5",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 6",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 7",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 8",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 9",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 10",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 11",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 12",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 13",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 14",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 15",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 16",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 17",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 18",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 19",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 20",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 21",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 22",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 23",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 24",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 25",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 26",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 27",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 28",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 29",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 30",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 31",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 32",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 33",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 34",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 35",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 36",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 37",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 38",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 39",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 40",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 41",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 42",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 43",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 44",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 45",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 46",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 47",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 48",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 49",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 50",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 51",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 52",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 53",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 54",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 55",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 56",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 57",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 58",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 59",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 60",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 61",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 62",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 63",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 64",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 65",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 66",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 67",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 68",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 69",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 70",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 71",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 72",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 73",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 74",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 75",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 76",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 77",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 78",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 79",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 80",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 81",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 82",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 83",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 84",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 85",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 86",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 87",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 88",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 89",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 90",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 91",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 92",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 93",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 94",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 95",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 96",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 97",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 98",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 99",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Estoy neutral 100",
+      "sentimiento": "neutral"
+    },
+    {
+      "texto": "Todo está negativo 1",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 2",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 3",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 4",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 5",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 6",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 7",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 8",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 9",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 10",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 11",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 12",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 13",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 14",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 15",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 16",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 17",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 18",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 19",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 20",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 21",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 22",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 23",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 24",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 25",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 26",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 27",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 28",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 29",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 30",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 31",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 32",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 33",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 34",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 35",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 36",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 37",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 38",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 39",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 40",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 41",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 42",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 43",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 44",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 45",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 46",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 47",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 48",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 49",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 50",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 51",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 52",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 53",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 54",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 55",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 56",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 57",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 58",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 59",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 60",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 61",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 62",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 63",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 64",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 65",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 66",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 67",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 68",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 69",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 70",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 71",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 72",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 73",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 74",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 75",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 76",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 77",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 78",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 79",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 80",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 81",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 82",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 83",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 84",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 85",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 86",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 87",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 88",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 89",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 90",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 91",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 92",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 93",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 94",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 95",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 96",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 97",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 98",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 99",
+      "sentimiento": "negativo"
+    },
+    {
+      "texto": "Todo está negativo 100",
+      "sentimiento": "negativo"
+    }
+  ],
   "palabras": [
-    { "palabras": ["feliz", "alegre", "contento", "emocionado"], "sentimiento": "alegría" },
-    { "palabras": ["triste", "deprimido", "melancólico"], "sentimiento": "tristeza" },
-    { "palabras": ["enojado", "molesto", "furioso"], "sentimiento": "enojo" },
-    { "palabras": ["miedo", "asustado", "preocupado"], "sentimiento": "miedo" },
-    { "palabras": ["neutral", "indiferente"], "sentimiento": "neutral" },
-    { "palabras": ["positivo", "optimista"], "sentimiento": "positivo" },
-    { "palabras": ["negativo", "pésimo"], "sentimiento": "negativo" }
+    {
+      "palabras": [
+        "feliz",
+        "alegre",
+        "contento",
+        "emocionado"
+      ],
+      "sentimiento": "alegría"
+    },
+    {
+      "palabras": [
+        "triste",
+        "deprimido",
+        "melancólico"
+      ],
+      "sentimiento": "tristeza"
+    },
+    {
+      "palabras": [
+        "enojado",
+        "molesto",
+        "furioso"
+      ],
+      "sentimiento": "enojo"
+    },
+    {
+      "palabras": [
+        "miedo",
+        "asustado",
+        "preocupado"
+      ],
+      "sentimiento": "miedo"
+    },
+    {
+      "palabras": [
+        "neutral",
+        "indiferente"
+      ],
+      "sentimiento": "neutral"
+    },
+    {
+      "palabras": [
+        "positivo",
+        "optimista"
+      ],
+      "sentimiento": "positivo"
+    },
+    {
+      "palabras": [
+        "negativo",
+        "pésimo"
+      ],
+      "sentimiento": "negativo"
+    }
   ]
 }
