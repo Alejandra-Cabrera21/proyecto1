@@ -27,6 +27,7 @@ app.get("/", (req, res) => {
 });
 
 // Ruta de análisis
+// Ruta de análisis
 app.post("/analizar", async (req, res) => {
   try {
     const { usuario, mensaje } = req.body;
@@ -36,7 +37,7 @@ app.post("/analizar", async (req, res) => {
       .map(e => `Texto: "${e.texto}" → {"sentimiento":"${e.sentimiento}"}`)
       .join("\n");
 
-    // 2️⃣ Consultar OpenAI con salida JSON forzada
+    // 2️⃣ Llamada a OpenAI
     const response = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
@@ -45,11 +46,10 @@ app.post("/analizar", async (req, res) => {
       },
       body: JSON.stringify({
         model: "gpt-4o-mini",
-        response_format: { type: "json_object" },   // 👈 fuerza JSON
         messages: [
           {
             role: "system",
-            content: "Eres un analizador de emociones en ESPAÑOL. Responde SOLO en formato JSON {\"sentimiento\":\"etiqueta\"}. Etiquetas válidas: positivo, negativo, neutral, tristeza, alegría, enojo, miedo."
+            content: "Eres un analizador de emociones en ESPAÑOL. Devuelve SOLO en formato JSON válido con la estructura {\"sentimiento\":\"etiqueta\"}. Etiquetas válidas: positivo, negativo, neutral, tristeza, alegría, enojo, miedo."
           },
           {
             role: "user",
@@ -57,29 +57,35 @@ app.post("/analizar", async (req, res) => {
           },
           {
             role: "user",
-            content: mensaje   // 👈 el mensaje del usuario
+            content: mensaje
           }
         ],
-        max_tokens: 20,
+        max_tokens: 30,
         temperature: 0
       }),
     });
 
     const data = await response.json();
+    console.log("🔎 Respuesta cruda OpenAI:", data);
 
     // 3️⃣ Parsear JSON seguro
     let sentimiento = "no_detectado";
     try {
-      const parsed = JSON.parse(data.choices?.[0]?.message?.content || "{}");
+      const raw = data.choices?.[0]?.message?.content || "";
+      const parsed = JSON.parse(raw);
       if (parsed.sentimiento) {
         sentimiento = parsed.sentimiento.toLowerCase().trim();
       }
     } catch (err) {
-      console.error("❌ Error parseando JSON de OpenAI:", err);
+      console.warn("⚠️ No vino JSON, usando texto:", err);
+      const raw = (data.choices?.[0]?.message?.content || "").toLowerCase();
+      const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo"];
+      const encontrada = etiquetas.find(e => raw.includes(e));
+      sentimiento = encontrada || "no_detectado";
     }
 
-    // 4️⃣ Fallback con palabras clave si OpenAI falla
-    if (!sentimiento || sentimiento === "no_detectado") {
+    // 4️⃣ Fallback con palabras clave (dataset.palabras)
+    if (sentimiento === "no_detectado") {
       for (const entrada of palabras) {
         if (entrada.palabras.some(p => mensaje.toLowerCase().includes(p))) {
           sentimiento = entrada.sentimiento;
@@ -88,7 +94,7 @@ app.post("/analizar", async (req, res) => {
       }
     }
 
-    // 5️⃣ Feedback motivacional
+    // 5️⃣ Feedback
     const feedbacks = {
       positivo: "🌟 ¡Excelente! Sigue disfrutando de esta buena energía.",
       alegría: "😃 ¡Qué bonito que estés alegre! Disfruta ese momento.",
@@ -103,7 +109,7 @@ app.post("/analizar", async (req, res) => {
     res.json({
       usuario,
       mensaje,
-      sentimiento: sentimiento || "no_detectado",
+      sentimiento,
       feedback: feedbacks[sentimiento] || feedbacks.no_detectado
     });
 
