@@ -32,8 +32,61 @@ async function analizar() {
       <p><b>Sentimiento:</b> ${data.sentimiento || "No detectado"}</p>
       <p><b>Retroalimentación:</b> ${data.feedback}</p>
     `;
+
+    // 📌 Actualizar métricas cada vez que se analiza un mensaje
+    cargarMetricas();
+
   } catch (error) {
     console.error("❌ Error en frontend:", error);
     alert("No se pudo conectar con el servidor. Intenta de nuevo en unos segundos.");
+  }
+}
+
+// 📊 Función para cargar métricas y dibujar gráfico
+async function cargarMetricas() {
+  try {
+    const resp = await fetch("https://proyectoo1.onrender.com/metricas");
+    const data = await resp.json();
+
+    // Preparar datos
+    const etiquetas = Object.keys(data.metricas);
+    const valores = Object.values(data.metricas);
+
+    // Renderizar gráfico
+    const ctx = document.getElementById("grafica").getContext("2d");
+
+    // 🔄 Destruir gráfico previo si ya existe
+    if (window.miGrafico) {
+      window.miGrafico.destroy();
+    }
+
+    window.miGrafico = new Chart(ctx, {
+      type: "pie",
+      data: {
+        labels: etiquetas,
+        datasets: [{
+          data: valores,
+          backgroundColor: [
+            "#4CAF50", // positivo
+            "#F44336", // negativo
+            "#FFC107", // neutral
+            "#2196F3", // tristeza
+            "#9C27B0", // alegría
+            "#FF5722", // enojo
+            "#00BCD4"  // miedo
+          ]
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: "bottom" },
+          title: { display: true, text: "Distribución de emociones" }
+        }
+      }
+    });
+
+  } catch (err) {
+    console.error("❌ Error cargando métricas:", err);
   }
 }
