@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
   res.send("✅ Backend corriendo con OpenAI y dataset unificado");
 });
 
-// Ruta de análisis
+
 // Ruta de análisis
 app.post("/analizar", async (req, res) => {
   try {
@@ -45,7 +45,7 @@ app.post("/analizar", async (req, res) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        model: "gpt-4o-mini",
+        model: "gpt-5",
         messages: [
           {
             role: "system",
