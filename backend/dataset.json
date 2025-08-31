@@ -2725,79 +2725,79 @@
       "sentimiento": "negativo"
     },
     {
-      "texto": "Siento que nada tiene solución. (82)",
+      "texto": "Siento que nada tiene solución.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Hoy ha sido un día terrible. (83)",
+      "texto": "Hoy ha sido un día terrible.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Me siento frustrado con todo. (84)",
+      "texto": "Me siento frustrado con todo.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Nada sale como lo planeo. (85)",
+      "texto": "Nada sale como lo planeo.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Estoy decepcionado de la situación. (86)",
+      "texto": "Estoy decepcionado de la situación.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Siento que todo está en mi contra. (87)",
+      "texto": "Siento que todo está en mi contra.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "El día ha sido un desastre. (88)",
+      "texto": "El día ha sido un desastre.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Estoy agotado de tanto problema. (89)",
+      "texto": "Estoy agotado de tanto problema.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Nada tiene sentido ahora mismo. (90)",
+      "texto": "Nada tiene sentido ahora mismo.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Todo parece salir mal últimamente. (91)",
+      "texto": "Todo parece salir mal últimamente.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Siento que nada tiene solución. (92)",
+      "texto": "Siento que nada tiene solución.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Hoy ha sido un día terrible. (93)",
+      "texto": "Hoy ha sido un día terrible.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Me siento frustrado con todo. (94)",
+      "texto": "Me siento frustrado con todo.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Nada sale como lo planeo. (95)",
+      "texto": "Nada sale como lo planeo.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Estoy decepcionado de la situación. (96)",
+      "texto": "Estoy decepcionado de la situación.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Siento que todo está en mi contra. (97)",
+      "texto": "Siento que todo está en mi contra.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "El día ha sido un desastre. (98)",
+      "texto": "El día ha sido un desastre.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Estoy agotado de tanto problema. (99)",
+      "texto": "Estoy agotado de tanto problema.",
       "sentimiento": "negativo"
     },
     {
-      "texto": "Nada tiene sentido ahora mismo. (100)",
+      "texto": "Nada tiene sentido ahora mismo.",
       "sentimiento": "negativo"
     }
   ],
@@ -2807,7 +2807,9 @@
         "feliz",
         "alegre",
         "contento",
-        "emocionado"
+        "emocionado",
+        "contenta",
+        "emocionada"
       ],
       "sentimiento": "alegría"
     },
@@ -2815,7 +2817,9 @@
       "palabras": [
         "triste",
         "deprimido",
-        "melancólico"
+        "melancólico",
+        "deprimida",
+        "melancólica"
       ],
       "sentimiento": "tristeza"
     },
@@ -2823,7 +2827,10 @@
       "palabras": [
         "enojado",
         "molesto",
-        "furioso"
+        "furioso",
+        "enojada",
+        "molesta",
+        "furiosa"
       ],
       "sentimiento": "enojo"
     },
@@ -2831,7 +2838,9 @@
       "palabras": [
         "miedo",
         "asustado",
-        "preocupado"
+        "preocupado",
+        "asustada",
+        "preocupada"
       ],
       "sentimiento": "miedo"
     },
@@ -2845,14 +2854,17 @@
     {
       "palabras": [
         "positivo",
-        "optimista"
+        "optimista",
+        "positiva"
       ],
       "sentimiento": "positivo"
     },
     {
       "palabras": [
         "negativo",
-        "pésimo"
+        "pésimo",
+        "negativa",
+        "pésima"
       ],
       "sentimiento": "negativo"
     }
