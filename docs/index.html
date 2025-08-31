@@ -88,11 +88,38 @@
     }
 
     /* 📱 Ajustes para móviles */
-    @media (max-width: 600px) {
-      h2 { font-size: 1.2rem; }
-      textarea { height: 100px; font-size: 0.9rem; }
-      button { font-size: 0.9rem; padding: 10px; }
+  @media (max-width: 600px) {
+    body {
+      align-items: flex-start;   /* que la tarjeta no quede flotando en medio */
+      padding-top: 20px;         /* margen arriba */
     }
+
+    .card {
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0px 5px 12px rgba(0,0,0,0.15);
+      max-width: 95%;            /* ocupa casi todo el ancho */
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    textarea {
+      height: 90px;
+      font-size: 0.95rem;
+    }
+
+    button {
+      font-size: 1rem;
+      padding: 14px;
+      width: 100%;              /* botón más ancho */
+    }
+
+    #resultado {
+      font-size: 0.95rem;
+    }
+  }
   </style>
 </head>
 <body>
