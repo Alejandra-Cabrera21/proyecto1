@@ -64,8 +64,24 @@ app.post("/analizar", async (req, res) => {
         messages: [
           {
             role: "system",
-            content: "Eres un analizador de emociones en ESPAÑOL. Responde SOLO en formato JSON con la estructura {\"sentimiento\":\"etiqueta\"}. Etiquetas válidas: positivo, negativo, neutral, tristeza, alegría, enojo, miedo."
+            content: `Eres un analizador de emociones en ESPAÑOL. 
+            Clasifica el sentimiento principal que transmite un mensaje en una sola categoría emocional. 
+            Responde SOLO en formato JSON con la estructura {"sentimiento":"etiqueta"}.
+
+            Las etiquetas válidas son: positivo, negativo, neutral, tristeza, alegría, enojo, miedo.
+            Si no puedes identificar claramente la emoción, responde {"sentimiento":"no_detectado"}.
+
+            Ejemplos:
+            - "Estoy feliz porque aprobé un examen" → {"sentimiento":"alegría"}
+            - "La esperanza siempre me acompaña" → {"sentimiento":"alegría"}
+            - "Hoy me siento muy motivado y lleno de energía" → {"sentimiento":"positivo"}
+            - "Siento un vacío profundo en mi corazón" → {"sentimiento":"tristeza"}
+            - "Estoy muy enojada por la injusticia" → {"sentimiento":"enojo"}
+            - "Me da miedo hablar en público" → {"sentimiento":"miedo"}
+            - "No tengo ni alegría ni tristeza, solo estoy aquí" → {"sentimiento":"neutral"}
+            - "Nada me sale bien, todo está perdido" → {"sentimiento":"negativo"}`
           },
+
           {
             role: "user",
             content: "Ejemplos de entrenamiento:\n" + ejemplosTexto
