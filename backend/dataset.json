@@ -2801,16 +2801,17 @@
       "sentimiento": "negativo"
     }
   ],
-"palabras": [
+  "palabras": [
   {
     "palabras": [
       "feliz","alegre","contento","emocionado","contenta","emocionada",
       "entusiasmado","entusiasmada","optimista","esperanza","satisfecho","satisfecha",
       "animado","animada","motivado","motivada","afortunado","afortunada",
-      "jubilos","eufórico","eufórica","risueño","risueña","sonriente","radiante",
+      "jubiloso","jubilosa","eufórico","eufórica","risueño","risueña","sonriente","radiante",
       "agradecido","agradecida","victorioso","victoriosa","exitoso","exitosa",
       "esperanzado","esperanzada","positivo","positiva","encantado","encantada",
-      "confiado","confiada","ilusionado","ilusionada","pleno","plena"
+      "confiado","confiada","ilusionado","ilusionada","pleno","plena","gozoso","gozosa",
+      "orgulloso","orgullosa","dichoso","dichosa","animoso","animosa","reconfortado","reconfortada"
     ],
     "sentimiento": "alegría"
   },
@@ -2821,7 +2822,8 @@
       "llorando","desesperanzado","desesperanzada","infeliz","desdichado","desdichada",
       "abatimiento","pesimista","apagado","apagada","desconsolado","desconsolada",
       "apático","apática","vulnerable","solitario","solitaria","dolido","dolida",
-      "angustiado","angustiada","abrumado","abrumada","inseguro","insegura"
+      "angustiado","angustiada","abrumado","abrumada","inseguro","insegura",
+      "desvalido","desvalida","desgarrado","desgarrada","meloso","melosa","nostalgia"
     ],
     "sentimiento": "tristeza"
   },
@@ -2831,8 +2833,9 @@
       "frustrado","frustrada","enfadado","enfadada","colérico","colérica",
       "violento","violenta","colera","cólera","rabioso","rabiosa","enfurecido","enfurecida",
       "indignado","indignada","resentido","resentida","contrariado","contrariada",
-      "amargado","amargada","ofendido","ofendida","intolerante","hostil","fastidiado","fastidiada",
-      "explosivo","explosiva","ardido","ardida", "coraje"
+      "amargado","amargada","ofendido","ofendida","intolerante","hostil",
+      "fastidiado","fastidiada","explosivo","explosiva","ardido","ardida","agresivo","agresiva",
+      "coraje","en cólera","rabia","malhumorado","malhumorada","impaciente","furia"
     ],
     "sentimiento": "enojo"
   },
@@ -2843,7 +2846,7 @@
       "ansioso","ansiosa","incómodo","incómoda","pánico","espantado","espantada",
       "aterrado","aterrada","horrorizado","horrorizada","aprensivo","aprensiva",
       "tembloroso","temblorosa","dubitativo","dubitativa","desesperado","desesperada",
-      "vulnerable","estresado","estresada"
+      "vulnerable","estresado","estresada","aturdido","aturdida","desconcertado","desconcertada"
     ],
     "sentimiento": "miedo"
   },
@@ -2852,7 +2855,7 @@
       "neutral","indiferente","tranquilo","tranquila","sereno","serena","calmado","calmada",
       "normal","equilibrado","equilibrada","objetivo","objetiva","estable","apacible",
       "despreocupado","despreocupada","moderado","moderada","pasivo","pasiva",
-      "imparcial","desinteresado","desinteresada"
+      "imparcial","desinteresado","desinteresada","cotidiano","monótono","rutinario","común"
     ],
     "sentimiento": "neutral"
   },
@@ -2861,7 +2864,8 @@
       "positivo","optimista","positiva","esperanzado","esperanzada","constructivo","constructiva",
       "seguro","segura","determinación","confianza","proactivo","proactiva","visionario","visionaria",
       "firme","resiliente","resuelto","resuelta","valiente","entusiasta","brillante","progresista",
-      "beneficioso","beneficiosa","alentador","alentadora","productivo","productiva","sólido","sólida"
+      "beneficioso","beneficiosa","alentador","alentadora","productivo","productiva",
+      "sólido","sólida","coherente","esperanzador","esperanzadora","confiable","exitoso","exitosa"
     ],
     "sentimiento": "positivo"
   },
@@ -2870,11 +2874,13 @@
       "negativo","pésimo","negativa","pésima","fatal","desastroso","desastrosa",
       "horrible","terrible","desalentador","desalentadora","inútil","fracasado","fracasada",
       "lamentable","desafortunado","desafortunada","patético","patética","derrotado","derrotada",
-      "sombrío","sombría","oscuro","tóxico","pobre","malo","malsano","ineficaz","destructivo","destructiva"
+      "sombrío","sombría","oscuro","tóxico","pobre","malo","malsano","ineficaz","destructivo","destructiva",
+      "doloroso","pesimista","decepcionante","lastimoso","trágico","horripilante","amargo","inservible"
     ],
     "sentimiento": "negativo"
   }
 ]
+
 
 
 }
