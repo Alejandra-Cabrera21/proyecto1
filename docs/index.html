@@ -87,49 +87,22 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* 📱 Ajustes para móviles */
-  @media (max-width: 600px) {
-    body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #74ebd5, #ACB6E5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 10px;
-}
+    /* 📱 móviles */
+    @media (max-width: 600px) {
+      .card {
+        border-radius: 0;   /* sin bordes redondeados en móvil, ocupa toda la pantalla */
+        max-width: 100%;    /* ancho completo */
+        height: auto;       /* se adapta a su contenido */
+      }
 
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
-  text-align: center;
-  width: 100%;       /* ocupa todo el ancho disponible */
-  max-width: 500px;  
-  animation: fadeIn 1s ease-in-out;
-}
+      button {
+        width: 100%;        /* botón ocupa todo el ancho */
+      }
 
-
-    h2 {
-      font-size: 1.2rem;
+      textarea {
+        width: 100%;
+      }
     }
-
-    textarea {
-      height: 100px;
-      font-size: 1rem;
-    }
-
-    button {
-      font-size: 1rem;
-      width: 100%;              /* botón más ancho */
-    }
-
-    #resultado {
-      font-size: 0.95rem;
-    }
-  }
   </style>
 </head>
 <body>
