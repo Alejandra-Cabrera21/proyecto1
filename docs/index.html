@@ -12,30 +12,33 @@
       align-items: center;
       min-height: 100vh;
       margin: 0;
+      padding: 10px;
     }
 
     .card {
       background: white;
-      padding: 30px;
+      padding: 20px;
       border-radius: 15px;
       box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
       text-align: center;
-      width: 450px;
+      width: 100%;
+      max-width: 500px; /* en pantallas grandes */
       animation: fadeIn 1s ease-in-out;
     }
 
     h2 {
       color: #333;
       margin-bottom: 20px;
+      font-size: 1.5rem;
     }
 
     textarea {
       width: 100%;
-      height: 100px;
+      height: 120px;
       border-radius: 10px;
       border: 1px solid #ccc;
       padding: 10px;
-      font-size: 14px;
+      font-size: 1rem;
       resize: none;
       margin-bottom: 15px;
       transition: 0.3s;
@@ -54,9 +57,10 @@
       padding: 12px 20px;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: bold;
       transition: 0.3s;
+      width: 100%; /* que ocupe todo el ancho en móviles */
     }
 
     button:hover {
@@ -66,7 +70,7 @@
 
     #resultado {
       margin-top: 20px;
-      font-size: 15px;
+      font-size: 1rem;
       color: #444;
       text-align: left;
       line-height: 1.5;
@@ -75,12 +79,19 @@
     canvas {
         margin-top: 20px;
         max-width: 100%;
-        height: 300px !important; /* asegura que se vea */
+        height: auto !important; /* asegura que se vea */
     }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-10px); }
       to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 📱 Ajustes para móviles */
+    @media (max-width: 600px) {
+      h2 { font-size: 1.2rem; }
+      textarea { height: 100px; font-size: 0.9rem; }
+      button { font-size: 0.9rem; padding: 10px; }
     }
   </style>
 </head>
