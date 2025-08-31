@@ -2801,72 +2801,141 @@
       "sentimiento": "negativo"
     }
   ],
-  "palabras": [
-    {
-      "palabras": [
-        "feliz",
-        "alegre",
-        "contento",
-        "emocionado",
-        "contenta",
-        "emocionada"
-      ],
-      "sentimiento": "alegría"
-    },
-    {
-      "palabras": [
-        "triste",
-        "deprimido",
-        "melancólico",
-        "deprimida",
-        "melancólica"
-      ],
-      "sentimiento": "tristeza"
-    },
-    {
-      "palabras": [
-        "enojado",
-        "molesto",
-        "furioso",
-        "enojada",
-        "molesta",
-        "furiosa"
-      ],
-      "sentimiento": "enojo"
-    },
-    {
-      "palabras": [
-        "miedo",
-        "asustado",
-        "preocupado",
-        "asustada",
-        "preocupada"
-      ],
-      "sentimiento": "miedo"
-    },
-    {
-      "palabras": [
-        "neutral",
-        "indiferente"
-      ],
-      "sentimiento": "neutral"
-    },
-    {
-      "palabras": [
-        "positivo",
-        "optimista",
-        "positiva"
-      ],
-      "sentimiento": "positivo"
-    },
-    {
-      "palabras": [
-        "negativo",
-        "pésimo",
-        "negativa",
-        "pésima"
-      ],
-      "sentimiento": "negativo"
-    }
-  ]
+    "palabras": [
+      {
+        "palabras": [
+          "feliz",
+          "alegre",
+          "contento",
+          "emocionado",
+          "contenta",
+          "emocionada",
+          "entusiasmado",
+          "entusiasmada",
+          "optimista",
+          "esperanza",
+          "satisfecho",
+          "satisfecha",
+          "animado",
+          "animada",
+          "motivado",
+          "motivado",
+          "afortunado",
+          "afortunada"
+        ],
+        "sentimiento": "alegría"
+      },
+      {
+        "palabras": [
+          "triste",
+          "deprimido",
+          "melancólico",
+          "deprimida",
+          "melancólica",
+          "abatido",
+          "abatida",
+          "desanimado",
+          "desanimada",
+          "nostálgico",
+          "nostálgica",
+          "desolado",
+          "desolada",
+          "llorando",
+          "desesperanzado",
+          "desesperanzada"
+        ],
+        "sentimiento": "tristeza"
+      },
+      {
+        "palabras": [
+          "enojado",
+          "molesto",
+          "furioso",
+          "enojada",
+          "molesta",
+          "furiosa",
+          "irritado",
+          "irritada",
+          "frustrado",
+          "frustrada",
+          "enfadado",
+          "enfadada",
+          "colérico",
+          "colérica",
+          "violento",
+          "violenta"
+        ],
+        "sentimiento": "enojo"
+      },
+      {
+        "palabras": [
+          "miedo",
+          "asustado",
+          "preocupado",
+          "asustada",
+          "preocupada",
+          "aterrorizado",
+          "aterrorizada",
+          "nervioso",
+          "nerviosa",
+          "inseguro",
+          "insegura",
+          "temeroso",
+          "temerosa",
+          "angustiado",
+          "angustiada"
+        ],
+        "sentimiento": "miedo"
+      },
+      {
+        "palabras": [
+          "neutral",
+          "indiferente",
+          "tranquilo",
+          "tranquila",
+          "sereno",
+          "serena",
+          "calmado",
+          "calmada",
+          "normal",
+          "equilibrado",
+          "equilibrada"
+        ],
+        "sentimiento": "neutral"
+      },
+      {
+        "palabras": [
+          "positivo",
+          "optimista",
+          "positiva",
+          "esperanzado",
+          "esperanzada",
+          "constructivo",
+          "constructiva",
+          "seguro",
+          "segura",
+          "determinación",
+          "confianza"
+        ],
+        "sentimiento": "positivo"
+      },
+      {
+        "palabras": [
+          "negativo",
+          "pésimo",
+          "negativa",
+          "pésima",
+          "fatal",
+          "desastroso",
+          "desastrosa",
+          "horrible",
+          "terrible",
+          "desalentador",
+          "desalentadora",
+          "inútil"
+        ],
+        "sentimiento": "negativo"
+      }
+    ]
+
 }
