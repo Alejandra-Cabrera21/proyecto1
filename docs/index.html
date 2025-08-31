@@ -3,16 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <title>App de Apoyo Emocional 💙</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 400px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 14px;
+      resize: none;
+      margin-bottom: 15px;
+      transition: 0.3s;
+    }
+
+    textarea:focus {
+      border-color: #4facfe;
+      outline: none;
+      box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+    }
+
+    button {
+      background: #4facfe;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00c6ff;
+      transform: scale(1.05);
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-size: 15px;
+      color: #444;
+      text-align: left;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h2>App de Apoyo Emocional 💙</h2>
-  
-  <textarea id="inputMensaje" placeholder="Escribe cómo te sientes..."></textarea>
-  <button onclick="analizar()">Analizar Sentimiento</button>
-  
-  <div id="resultado"></div>
-  
+  <div class="card">
+    <h2>App de Apoyo Emocional 💙</h2>
+    <textarea id="inputMensaje" placeholder="Escribe cómo te sientes..."></textarea>
+    <br>
+    <button onclick="analizar()">Analizar Sentimiento</button>
+    <div id="resultado"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
