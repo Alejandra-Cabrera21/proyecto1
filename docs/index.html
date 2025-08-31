@@ -90,15 +90,27 @@
     /* 📱 Ajustes para móviles */
   @media (max-width: 600px) {
     body {
-      align-items: flex-start;   /* que la tarjeta no quede flotando en medio */
-      padding-top: 20px;         /* margen arriba */
-    }
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
 
-    .card {
-      max-width: 100%;   /* ocupa todo el ancho disponible */
-      margin: 0 5px;     /* solo deja 5px de margen a los lados */
-      padding: 15px;     /* menos padding para aprovechar el espacio */
-    }
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 100%;       /* ocupa todo el ancho disponible */
+  max-width: 500px;  
+  animation: fadeIn 1s ease-in-out;
+}
+
 
     h2 {
       font-size: 1.2rem;
