@@ -21,11 +21,26 @@ const dataset = JSON.parse(fs.readFileSync("dataset.json", "utf-8"));
 const ejemplos = dataset.ejemplos;
 const palabras = dataset.palabras;
 
+// 📂 Archivo donde guardaremos el historial
+const HISTORIAL_FILE = "historial.json";
+
+// Función para leer historial existente
+function leerHistorial() {
+  if (!fs.existsSync(HISTORIAL_FILE)) return [];
+  return JSON.parse(fs.readFileSync(HISTORIAL_FILE, "utf-8"));
+}
+
+// Función para guardar historial
+function guardarHistorial(nuevoRegistro) {
+  let historial = leerHistorial();
+  historial.push(nuevoRegistro);
+  fs.writeFileSync(HISTORIAL_FILE, JSON.stringify(historial, null, 2));
+}
+
 // Ruta de prueba
 app.get("/", (req, res) => {
   res.send("✅ Backend corriendo con OpenAI y dataset unificado");
 });
-
 
 // Ruta de análisis
 app.post("/analizar", async (req, res) => {
@@ -106,17 +121,46 @@ app.post("/analizar", async (req, res) => {
       no_detectado: "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido."
     };
 
-    res.json({
+    // 📌 Construir resultado
+    const resultado = {
       usuario,
       mensaje,
       sentimiento,
-      feedback: feedbacks[sentimiento] || feedbacks.no_detectado
-    });
+      feedback: feedbacks[sentimiento] || feedbacks.no_detectado,
+      fecha: new Date().toISOString()
+    };
+
+    // Guardar en historial.json
+    guardarHistorial(resultado);
+
+    // Responder al frontend
+    res.json(resultado);
 
   } catch (error) {
     console.error("❌ Error en /analizar:", error);
     res.status(500).json({ error: "Error al analizar el mensaje" });
   }
+});
+
+// 📌 Nueva ruta: obtener historial completo
+app.get("/historial", (req, res) => {
+  const historial = leerHistorial();
+  res.json(historial);
+});
+
+// 📌 Nueva ruta: métricas por emoción
+app.get("/metricas", (req, res) => {
+  const historial = leerHistorial();
+  const metricas = {};
+
+  historial.forEach(item => {
+    metricas[item.sentimiento] = (metricas[item.sentimiento] || 0) + 1;
+  });
+
+  res.json({
+    total_mensajes: historial.length,
+    metricas
+  });
 });
 
 const PORT = process.env.PORT || 3000;
