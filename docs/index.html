@@ -23,6 +23,7 @@
       max-width: 700px; /* para pantallas grandes */
       margin: 20px auto;
       animation: fadeIn 1s ease-in-out;
+      overflow: hidden; 
     }
 
     h2 {
@@ -77,12 +78,14 @@
       line-height: 1.5;
     }
 
-    canvas {
-      margin: 20px auto;   /* 🔒 centra el canvas horizontalmente */
-      max-width: 60%;      /* controla el ancho */
-      height: auto !important;
-      display: block;      /* necesario para que margin auto funcione */
-    }
+canvas {
+  display: block;          /* Necesario para usar margin auto */
+  margin: 20px auto;       /* Centrado horizontal */
+  max-width: 90%;          /* 🔒 nunca se sale del .card */
+  width: 100%;             /* Ocupa todo el ancho disponible */
+  height: auto !important; /* Mantiene proporción */
+  box-sizing: border-box;  /* Cuenta padding/border en el ancho */
+}
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(-10px); }
