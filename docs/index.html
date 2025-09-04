@@ -22,8 +22,7 @@
       box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
       text-align: center;
       width: 100%;
-      max-width: 900px; /* en pantallas grandes */
-      margin: 0 auto;
+      max-width: 500px; /* en pantallas grandes */
       animation: fadeIn 1s ease-in-out;
     }
 
@@ -92,9 +91,10 @@
     /* 📱 móviles */
   @media (max-width: 600px) {
     .card {
-      max-width: 100%;   /* usa todo el ancho disponible */
-      border-radius: 0;  /* opcional: hace que se vea como app completa */
-      padding: 15px;     /* reduce padding para que no se vea apretado */     
+      border-radius: 0;   
+      max-width: 100%;   /* ocupa todo el ancho del teléfono */
+      padding: 20px;     /* reduce padding para que no se vea apretado */
+      height: auto;      
     }
 
     h2 {
