@@ -22,7 +22,8 @@
       box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
       text-align: center;
       width: 100%;
-      max-width: 500px; /* en pantallas grandes */
+      max-width: 900px; /* en pantallas grandes */
+      margin: 0 auto;
       animation: fadeIn 1s ease-in-out;
     }
 
@@ -89,28 +90,27 @@
 
     /* 📱 móviles */
     /* 📱 móviles */
-@media (max-width: 600px) {
-  .card {
-    border-radius: 0;   
-    max-width: 100%;   /* ocupa todo el ancho del teléfono */
-    padding: 20px;     /* reduce padding para que no se vea apretado */
-    height: auto;      
-  }
+  @media (max-width: 600px) {
+    .card {
+      max-width: 100%;   /* usa todo el ancho disponible */
+      border-radius: 0;  /* opcional: hace que se vea como app completa */
+      padding: 15px;     /* reduce padding para que no se vea apretado */     
+    }
 
-  h2 {
-    font-size: 1.2rem;
-  }
+    h2 {
+      font-size: 1.2rem;
+    }
 
-  textarea {
-    font-size: 0.9rem;
-    height: 100px;
-  }
+    textarea {
+      font-size: 0.9rem;
+      height: 100px;
+    }
 
-  button {
-    font-size: 0.9rem;
-    padding: 12px;
+    button {
+      font-size: 0.9rem;
+      padding: 12px;
+    }
   }
-}
 
   </style>
 </head>
