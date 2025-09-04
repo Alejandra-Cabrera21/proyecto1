@@ -2,17 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>App de Apoyo Emocional 💙</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       background: linear-gradient(to right, #74ebd5, #ACB6E5);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       margin: 0;
       padding: 10px;
+      min-height: 100vh;
     }
 
     .card {
@@ -23,6 +21,7 @@
       text-align: center;
       width: 100%;
       max-width: 500px; /* en pantallas grandes */
+      margin: 20px auto; /* centrado en PC */
       animation: fadeIn 1s ease-in-out;
     }
 
@@ -60,7 +59,7 @@
       font-size: 1rem;
       font-weight: bold;
       transition: 0.3s;
-      width: 100%; /* que ocupe todo el ancho en móviles */
+      width: 100%;
     }
 
     button:hover {
@@ -77,9 +76,9 @@
     }
 
     canvas {
-        margin-top: 20px;
-        max-width: 100%;
-        height: auto !important; /* asegura que se vea */
+      margin-top: 20px;
+      max-width: 100%;
+      height: auto !important;
     }
 
     @keyframes fadeIn {
@@ -87,33 +86,31 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-
-    @media (max-width: 900px) {
+    /* 📱 móviles */
+    @media (max-width: 768px) {
       .card {
-        border-radius: 0;   
-        width: 100%;          /* ocupa todo el ancho */
-        max-width: none;      /* elimina límite de 500px */
+        border-radius: 0;
+        width: 100%;
+        max-width: 100%;   /* ocupa todo el ancho del teléfono */
+        margin: 0;
         padding: 20px;
-        margin: 0;            /* elimina márgenes */
         height: auto;
       }
 
       h2 {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
       }
 
       textarea {
-        font-size: 1rem;
-        height: 120px;
+        font-size: 1.1rem;
+        height: 140px;
       }
 
       button {
-        font-size: 1rem;
-        padding: 14px;
+        font-size: 1.1rem;
+        padding: 16px;
       }
     }
-
-
   </style>
 </head>
 <body>
