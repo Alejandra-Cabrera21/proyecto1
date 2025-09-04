@@ -125,35 +125,54 @@
     }
     
 
-    @media (min-width: 769px) and (max-width: 1200px) {
-      .card {
-        max-width: 480px;    /* más delgado */
-        width: 100%;          /* que no se desborde */
-        padding: 20px;
-        border-radius: 10px;
-        box-sizing: border-box;
-        box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
-        margin:  0 auto;        /* centrado */
-      }
+/* 💻 Estilo APP en pantallas medianas (tablets/laptops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  body {
+    overflow-x: hidden; /* 🔒 evita scroll horizontal */
+  }
 
-      h2 {
-        font-size: 1.6rem;   /* ajustamos un poco el tamaño */
-      }
+  .card {
+    max-width: 480px;         
+    width: 100%;              
+    margin: 0 auto;           
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+    box-sizing: border-box;  
+  }
 
-      textarea {
-        font-size: 0.9rem;
-        height: 50px;
-        padding: 4px;
-      }
+  .card * {
+    max-width: 100% !important;  /* todos los hijos respetan el ancho */
+    box-sizing: border-box;
+  }
 
-      button {
-        font-size: 0.95rem;  /* más ligero */
-        padding: 8px 16px;   /* botón más delgado */
-        width: auto;
-        margin: 10px auto;
-        display: block;
-      }
-    }
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  textarea {
+    font-size: 1rem;
+    height: 70px;
+    padding: 6px;
+    width: 100%;   /* 🔒 nunca más ancho que la card */
+  }
+
+  button {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    width: auto;
+    max-width: 100%; /* 🔒 evita que se desborde */
+    margin: 10px auto;
+    display: block;
+  }
+
+  canvas {
+    width: 100% !important;   /* 🔒 asegura que el gráfico se ajuste */
+    height: auto !important;
+    display: block;
+  }
+}
+
 
 
   </style>
