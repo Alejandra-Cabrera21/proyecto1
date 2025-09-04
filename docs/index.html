@@ -88,21 +88,30 @@
     }
 
     /* 📱 móviles */
-    @media (max-width: 100px) {
-      .card {
-        border-radius: 0;   /* sin bordes redondeados en móvil, ocupa toda la pantalla */
-        max-width: 100px;    /* ancho completo */
-        height: auto;       /* se adapta a su contenido */
-      }
+    /* 📱 móviles */
+@media (max-width: 600px) {
+  .card {
+    border-radius: 0;   
+    max-width: 100%;   /* ocupa todo el ancho del teléfono */
+    padding: 20px;     /* reduce padding para que no se vea apretado */
+    height: auto;      
+  }
 
-      button {
-        width: 100%;        /* botón ocupa todo el ancho */
-      }
+  h2 {
+    font-size: 1.2rem;
+  }
 
-      textarea {
-        width: 100%;
-      }
-    }
+  textarea {
+    font-size: 0.9rem;
+    height: 100px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+}
+
   </style>
 </head>
 <body>
