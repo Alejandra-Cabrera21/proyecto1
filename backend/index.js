@@ -134,6 +134,7 @@ app.post("/analizar", async (req, res) => {
       miedo: "🌈 No estás sola, el miedo es normal. Confía en ti.",
       neutral: "😌 Todo tranquilo, aprovecha este momento de calma.",
       negativo: "💭 Sé que no es fácil, pero cada día es una nueva oportunidad.",
+      amor: "❤️ Qué hermoso que sientas amor. Cuida ese sentimiento y compártelo con quienes lo hacen especial.",
       no_detectado: "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido."
     };
 
