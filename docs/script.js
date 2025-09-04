@@ -48,42 +48,38 @@ async function cargarMetricas() {
     const resp = await fetch("https://proyectoo1.onrender.com/metricas");
     const data = await resp.json();
 
-    // 📌 Colores fijos por sentimiento
-    const colores = {
-      positivo: "#4CAF50",   // verde
-      negativo: "#F44336",   // rojo
-      neutral: "#FFC107",    // amarillo
-      alegría: "#2196F3",    // azul
-      tristeza: "#9C27B0",   // morado
-      enojo: "#FF5722",      // naranja fuerte
-      miedo: "#00BCD4",      // celeste
-      amor: "#E91E63"        // rosa
-    };
-
-    // 📌 Construir arrays alineando etiquetas y colores
+    // Preparar datos
     const etiquetas = Object.keys(data.metricas);
-    const valores = [];
-    const coloresUsados = [];
-
-    etiquetas.forEach(e => {
-      valores.push(data.metricas[e]);               // valor numérico
-      coloresUsados.push(colores[e] || "#999999");  // color fijo (gris si no está definido)
-    });
+    const valores = Object.values(data.metricas);
 
     // Renderizar gráfico
     const ctx = document.getElementById("grafica").getContext("2d");
-    new Chart(ctx, {
+
+    // 🔄 Destruir gráfico previo si ya existe
+    if (window.miGrafico) {
+      window.miGrafico.destroy();
+    }
+
+    window.miGrafico = new Chart(ctx, {
       type: "pie",
       data: {
         labels: etiquetas,
         datasets: [{
           data: valores,
-          backgroundColor: coloresUsados
+          backgroundColor: [
+            "#4CAF50", // Positivo → verde
+            "#F44336", // Negativo → rojo
+            "#FFC107", // Neutral → amarillo
+            "#2196F3", // Alegría → azul
+            "#9C27B0", // Tristeza → morado
+            "#FF5722", // Enojo → naranja fuerte
+            "#00BCD4", // Miedo → celeste
+            "#E91E63"  // Amor → rosa
+          ]
         }]
       },
       options: {
         responsive: true,
-        maintainAspectRatio: false,
         plugins: {
           legend: { position: "bottom" },
           title: { display: true, text: "Distribución de emociones" }
