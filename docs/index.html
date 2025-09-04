@@ -103,10 +103,12 @@ canvas {
         border-radius: 0;       /* sin esquinas redondeadas */
         width: 100%;
         max-width: 100%;
-        height: 100vh;          /* ocupa toda la pantalla */
+        min-height: 100vh;          /* ocupa toda la pantalla */
+        height: auto;
         margin: 0;
         padding: 15px;
         box-shadow: none;       /* sin sombra, estilo app */
+        overflow: hidden; 
       }
 
       h2 {
