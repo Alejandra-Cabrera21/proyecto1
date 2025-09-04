@@ -131,7 +131,7 @@ app.post("/analizar", async (req, res) => {
       alegría: "😃 ¡Qué bonito que estés alegre! Disfruta ese momento.",
       tristeza: "💙 Recuerda que está bien sentirse triste. Tómate un descanso y cuida de ti.",
       enojo: "😤 Respira hondo, el enojo pasará. Tú tienes el control.",
-      miedo: "🌈 No estás sola, el miedo es normal. Confía en ti.",
+      miedo: "🌈 El miedo es una emoción válida, recuerda que puedes afrontarlo con calma. Respira profundo, concéntrate en el presente y date permiso de avanzar poco a poco.",
       neutral: "😌 Todo tranquilo, aprovecha este momento de calma.",
       negativo: "💭 Sé que no es fácil, pero cada día es una nueva oportunidad.",
       amor: "❤️ Qué hermoso que sientas amor. Cuida ese sentimiento y compártelo con quienes lo hacen especial.",
