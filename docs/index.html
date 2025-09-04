@@ -126,51 +126,52 @@
     
 
 /* 💻 Estilo APP en pantallas medianas (tablets/laptops) */
-@media (min-width: 769px) and (max-width: 1200px) {
-  body {
-    overflow-x: hidden; /* 🔒 corta cualquier scroll horizontal */
-  }
+    @media (min-width: 769px) and (max-width: 1200px) {
+      body {
+        overflow-x: hidden; /* 🔒 corta cualquier scroll horizontal */
+      }
 
-  .card {
-    width: 90%;             /* 📐 ocupa el 90% de la pantalla */
-    max-width: 480px;       /* nunca más de 480px */
-    margin: 0 auto;         /* centrado */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
-    box-sizing: border-box; /* 🔒 incluye padding en el cálculo */
-    overflow: hidden;       /* evita que los hijos lo hagan crecer */
-  }
+      .card {
+          background: white;
+          padding: 40px;
+          border-radius: 15px;
+          box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+          text-align: center;
+          width: 100%;
+          max-width: 600px; /* para pantallas grandes */
+          margin: 20px auto;
+          animation: fadeIn 1s ease-in-out;
+      }
 
-  h2 {
-    font-size: 1.6rem;
-    word-wrap: break-word; /* 🔒 si el texto es largo, que se parta */
-  }
+      h2 {
+        font-size: 1.6rem;
+        word-wrap: break-word; /* 🔒 si el texto es largo, que se parta */
+      }
 
-  textarea {
-    font-size: 1rem;
-    height: 70px;
-    padding: 6px;
-    width: 100%;  /* 🔒 ocupa solo lo que le deja la card */
-    box-sizing: border-box;
-  }
+      textarea {
+        font-size: 1rem;
+        height: 70px;
+        padding: 6px;
+        width: 100%;  /* 🔒 ocupa solo lo que le deja la card */
+        box-sizing: border-box;
+      }
 
-  button {
-    font-size: 0.95rem;
-    padding: 8px 16px;
-    width: auto;
-    max-width: 100%; 
-    margin: 10px auto;
-    display: block;
-    box-sizing: border-box;
-  }
+      button {
+        font-size: 0.95rem;
+        padding: 8px 16px;
+        width: auto;
+        max-width: 100%; 
+        margin: 10px auto;
+        display: block;
+        box-sizing: border-box;
+      }
 
-  canvas {
-    width: 100% !important;   /* 🔒 siempre dentro de la card */
-    height: auto !important;
-    display: block;
-  }
-}
+      canvas {
+        width: 100% !important;   /* 🔒 siempre dentro de la card */
+        height: auto !important;
+        display: block;
+      }
+    }
 
 
 
