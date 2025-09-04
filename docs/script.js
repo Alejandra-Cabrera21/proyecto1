@@ -60,12 +60,15 @@ async function cargarMetricas() {
       amor: "#E91E63"        // rosa
     };
 
-    // Datos desde el backend
+    // 📌 Construir arrays alineando etiquetas y colores
     const etiquetas = Object.keys(data.metricas);
-    const valores = Object.values(data.metricas);
+    const valores = [];
+    const coloresUsados = [];
 
-    // Colores según la etiqueta
-    const coloresUsados = etiquetas.map(e => colores[e] || "#999");
+    etiquetas.forEach(e => {
+      valores.push(data.metricas[e]);               // valor numérico
+      coloresUsados.push(colores[e] || "#999999");  // color fijo (gris si no está definido)
+    });
 
     // Renderizar gráfico
     const ctx = document.getElementById("grafica").getContext("2d");
@@ -80,7 +83,7 @@ async function cargarMetricas() {
       },
       options: {
         responsive: true,
-        maintainAspectRatio: false, // 📌 Permite controlar tamaño
+        maintainAspectRatio: false,
         plugins: {
           legend: { position: "bottom" },
           title: { display: true, text: "Distribución de emociones" }
