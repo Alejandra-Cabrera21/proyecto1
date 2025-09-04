@@ -61,7 +61,6 @@
       transition: 0.3s;
       width: 100%;
       display: inline-block;
-      display: block; 
     }
 
     button:hover {
@@ -87,6 +86,18 @@
       from { opacity: 0; transform: translateY(-10px); }
       to { opacity: 1; transform: translateY(0); }
     }
+
+        
+    @media (min-width: 901px) {
+      button {
+        width: auto;          /* se ajusta al contenido */
+        padding: 12px 30px;   /* espacio interno más balanceado */
+        font-size: 1rem;      /* tamaño de letra equilibrado */
+        margin: 15px auto;    /* centra el botón */
+        display: block;       /* asegura el centrado */
+      }
+    }
+
 
     /* 📱 Estilo APP en móviles */
     @media (max-width: 768px) {
