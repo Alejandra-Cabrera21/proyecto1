@@ -125,32 +125,36 @@
     }
     
 
-    @media (min-width: 769px) and (max-width: 900px) {
+    @media (min-width: 769px) and (max-width: 1200px) {
       .card {
-        max-width: 300px;    /* un poco más grande que móviles */
-        padding: 25px;       /* más espacio interno */
-        border-radius: 10px; /* esquinas suavizadas */
+        max-width: 480px;    /* más delgado */
+        width: 90%;          /* que no se desborde */
+        padding: 20px;
+        border-radius: 10px;
         box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+        height: auto;        /* ✅ se adapta al contenido */
+        margin: auto;        /* centrado */
       }
 
       h2 {
-        font-size: 1.8rem;   /* título más grande que en móvil */
+        font-size: 1.6rem;   /* ajustamos un poco el tamaño */
       }
 
       textarea {
         font-size: 1rem;
-        height: 80px;        /* más alto que móvil, menos que PC */
-        padding: 8px;
+        height: 70px;        /* un poco más compacto */
+        padding: 6px;
       }
 
       button {
-        font-size: 1rem;     /* tamaño intermedio */
-        padding: 10px 20px;  /* botón mediano */
-        width: auto;         /* no ocupa todo */
-        margin: 12px auto;
-        display: block;      /* centrado */
+        font-size: 0.95rem;  /* más ligero */
+        padding: 8px 16px;   /* botón más delgado */
+        width: auto;
+        margin: 10px auto;
+        display: block;
       }
     }
+
 
   </style>
 </head>
