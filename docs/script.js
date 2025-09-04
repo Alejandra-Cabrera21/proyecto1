@@ -48,37 +48,39 @@ async function cargarMetricas() {
     const resp = await fetch("https://proyectoo1.onrender.com/metricas");
     const data = await resp.json();
 
-    // Preparar datos
+    // 📌 Colores fijos por sentimiento
+    const colores = {
+      positivo: "#4CAF50",   // verde
+      negativo: "#F44336",   // rojo
+      neutral: "#FFC107",    // amarillo
+      alegría: "#2196F3",    // azul
+      tristeza: "#9C27B0",   // morado
+      enojo: "#FF5722",      // naranja fuerte
+      miedo: "#00BCD4",      // celeste
+      amor: "#E91E63"        // rosa
+    };
+
+    // Datos desde el backend
     const etiquetas = Object.keys(data.metricas);
     const valores = Object.values(data.metricas);
 
+    // Colores según la etiqueta
+    const coloresUsados = etiquetas.map(e => colores[e] || "#999");
+
     // Renderizar gráfico
     const ctx = document.getElementById("grafica").getContext("2d");
-
-    // 🔄 Destruir gráfico previo si ya existe
-    if (window.miGrafico) {
-      window.miGrafico.destroy();
-    }
-
-    window.miGrafico = new Chart(ctx, {
+    new Chart(ctx, {
       type: "pie",
       data: {
         labels: etiquetas,
         datasets: [{
           data: valores,
-          backgroundColor: [
-            "#4CAF50", // positivo
-            "#F44336", // negativo
-            "#FFC107", // neutral
-            "#2196F3", // tristeza
-            "#9C27B0", // alegría
-            "#FF5722", // enojo
-            "#00BCD4"  // miedo
-          ]
+          backgroundColor: coloresUsados
         }]
       },
       options: {
         responsive: true,
+        maintainAspectRatio: false, // 📌 Permite controlar tamaño
         plugins: {
           legend: { position: "bottom" },
           title: { display: true, text: "Distribución de emociones" }
