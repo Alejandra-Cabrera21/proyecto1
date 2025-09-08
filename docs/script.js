@@ -35,6 +35,7 @@ async function analizar() {
 
     // 📌 Actualizar métricas cada vez que se analiza un mensaje
     cargarMetricas();
+    cargarResumen();
 
   } catch (error) {
     console.error("❌ Error en frontend:", error);
