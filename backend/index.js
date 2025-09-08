@@ -182,6 +182,35 @@ app.get("/metricas", (req, res) => {
   });
 });
 
+// 📌 Nueva ruta: resumen de conversaciones
+app.get("/resumen", (req, res) => {
+  const historial = leerHistorial();
+  if (historial.length === 0) {
+    return res.json({ resumen: "No hay conversaciones aún." });
+  }
+
+  // Contar emociones
+  const conteo = {};
+  historial.forEach(item => {
+    conteo[item.sentimiento] = (conteo[item.sentimiento] || 0) + 1;
+  });
+
+  // Encontrar la emoción más frecuente
+  let emocionMasFrecuente = null;
+  let max = 0;
+  for (const [emocion, cantidad] of Object.entries(conteo)) {
+    if (cantidad > max) {
+      emocionMasFrecuente = emocion;
+      max = cantidad;
+    }
+  }
+
+  // Construir resumen
+  const resumen = `Hoy la mayoría de tus mensajes reflejaron ${emocionMasFrecuente}.`;
+
+  res.json({ resumen, conteo });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`✅ Servidor corriendo en puerto ${PORT}`);

@@ -91,3 +91,15 @@ async function cargarMetricas() {
     console.error("❌ Error cargando métricas:", err);
   }
 }
+
+async function cargarResumen() {
+  try {
+    const resp = await fetch("https://proyectoo1.onrender.com/resumen");
+    const data = await resp.json();
+
+    const resumenDiv = document.getElementById("resumen");
+    resumenDiv.innerHTML = `<p><b>Resumen:</b> ${data.resumen}</p>`;
+  } catch (err) {
+    console.error("❌ Error cargando resumen:", err);
+  }
+}
