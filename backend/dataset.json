@@ -2899,7 +2899,15 @@
   { "texto": "Amar me hace sentir esperanza. (97)", "sentimiento": "amor" },
   { "texto": "El amor me enseña a compartir. (98)", "sentimiento": "amor" },
   { "texto": "El amor me da valentía. (99)", "sentimiento": "amor" },
-  { "texto": "El amor es la esencia de mi vida. (100)", "sentimiento": "amor" }
+  { "texto": "El amor es la esencia de mi vida. (100)", "sentimiento": "amor" },
+  {
+  "texto": "Me quedé sorprendido con la noticia inesperada.", "sentimiento": "sorpresa"  },
+  {
+    "texto": "Estoy asombrada por lo que pasó ayer.", "sentimiento": "sorpresa"  },
+  {
+    "texto": "Hoy me siento en calma y en paz conmigo mismo.", "sentimiento": "calma"  },
+  {
+    "texto": "Estoy muy tranquilo disfrutando del momento.", "sentimiento": "calma"  }
   ],
   "palabras": [
     {
@@ -3006,6 +3014,47 @@
         "ilusión","idolatría","idolatrado","idolatrada","afectivo","amoroso","amable","empático","fraternidad","amar","amo","querida","querido","quiero"
       ],
       "sentimiento": "amor"
-    }
+    },
+    {
+      "palabras": [
+        "sorprendido",
+        "sorprendida",
+        "asombrado",
+        "asombrada",
+        "impactado",
+        "impactada",
+        "impresionado",
+        "impresionada",
+        "boquiabierto",
+        "boquiabierta",
+        "desconcertado",
+        "desconcertada",
+        "admirado",
+        "admirada",
+        "maravillado",
+        "maravillada"
+      ],
+      "sentimiento": "sorpresa"
+    },
+    {
+      "palabras": [
+        "calma",
+        "calmado",
+        "calmada",
+        "tranquilo",
+        "tranquila",
+        "sereno",
+        "serena",
+        "relajado",
+        "relajada",
+        "paz",
+        "sosegado",
+        "sosegada",
+        "equilibrado",
+        "equilibrada",
+        "armonía"
+      ],
+      "sentimiento": "calma"
+  }
   ]
 }
