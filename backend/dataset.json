@@ -2955,7 +2955,7 @@
         "tembloroso","temblorosa","dubitativo","dubitativa","desesperado","desesperada",
         "vulnerable","estresado","estresada","aturdido","aturdida","desconcertado","desconcertada",
         "inquieto","inquieta","sobresaltado","sobresaltada","paranoico","paranoica",
-        "recelo","temor","incertidumbre","ansiedad","espanto","susto","alarma"
+        "recelo","temor","incertidumbre","ansiedad","espanto","susto","alarma", "ansioso","ansiosa","ansiedad"
       ],
       "sentimiento": "miedo"
     },
