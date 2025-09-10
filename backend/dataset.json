@@ -3017,41 +3017,14 @@
     },
     {
       "palabras": [
-        "sorprendido",
-        "sorprendida",
-        "asombrado",
-        "asombrada",
-        "impactado",
-        "impactada",
-        "impresionado",
-        "impresionada",
-        "boquiabierto",
-        "boquiabierta",
-        "desconcertado",
-        "desconcertada",
-        "admirado",
-        "admirada",
-        "maravillado",
-        "maravillada", "sorpresa"
+        "sorprendido","sorprendida","asombrado","asombrada","impactado","impactada","impresionado","impresionada","boquiabierto","boquiabierta","desconcertado",
+        "desconcertada","admirado","admirada","maravillado","maravillada", "sorpresa"
       ],
       "sentimiento": "sorpresa"
     },
     {
       "palabras": [
-        "calma",
-        "calmado",
-        "calmada",
-        "tranquilo",
-        "tranquila",
-        "sereno",
-        "serena",
-        "relajado",
-        "relajada",
-        "paz",
-        "sosegado",
-        "sosegada",
-        "equilibrado",
-        "equilibrada",
+        "calma","calmado","calmada","tranquilo","tranquila","sereno","serena","relajado","relajada","paz","sosegado","sosegada","equilibrado","equilibrada",
         "armonía"
       ],
       "sentimiento": "calma"
