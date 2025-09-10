@@ -68,7 +68,7 @@ app.post("/analizar", async (req, res) => {
                       Clasifica el sentimiento principal que transmite un mensaje en una sola categoría emocional. 
                       Responde ÚNICAMENTE en formato JSON válido con la estructura {"sentimiento":"etiqueta"}.
 
-                      Las etiquetas válidas son: positivo, negativo, neutral, tristeza, alegría, enojo, miedo, amor.
+                      Las etiquetas válidas son: positivo, negativo, neutral, tristeza, alegría, enojo, miedo, amor, sorpresa, calma.
                       Si no puedes identificar claramente la emoción, responde {"sentimiento":"no_detectado"}.
 
                       No escribas explicaciones, solo devuelve JSON.
@@ -81,6 +81,8 @@ app.post("/analizar", async (req, res) => {
                       "No tengo ni alegría ni tristeza, solo estoy aquí" -> {"sentimiento":"neutral"}
                       "Nada me sale bien, todo está perdido" -> {"sentimiento":"negativo"}
                       "Siento un profundo cariño por mi familia" -> {"sentimiento":"amor"}
+                      "Me quedé en shock por lo que ocurrió" -> {"sentimiento":"sorpresa"}
+                      "Hoy me siento tranquilo y en paz" -> {"sentimiento":"calma"}
                       "Hoy me siento muy motivado y lleno de energía" -> {"sentimiento":"positivo"}`
           },
 
@@ -93,7 +95,7 @@ app.post("/analizar", async (req, res) => {
             content: mensaje
           }
         ],
-        max_tokens: 30,
+        max_completion_tokens: 50 ,
         temperature: 0
       }),
     });
@@ -112,7 +114,7 @@ app.post("/analizar", async (req, res) => {
     } catch (err) {
       console.warn("⚠️ No vino JSON, buscando en texto...");
       const raw = (data.choices?.[0]?.message?.content || "").toLowerCase();
-      const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo"];
+      const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo","amor","sorpresa","calma"];
       const encontrada = etiquetas.find(e => raw.includes(e));
       sentimiento = encontrada || "no_detectado";
     }
@@ -129,15 +131,17 @@ app.post("/analizar", async (req, res) => {
 
     // 5️⃣ Feedback
     const feedbacks = {
-      positivo: "🌟 ¡Excelente! Sigue disfrutando de esta buena energía.",
-      alegría: "😃 ¡Qué bonito que estés alegre! Disfruta ese momento.",
-      tristeza: "💙 Recuerda que está bien sentirse triste. Tómate un descanso y cuida de ti.",
-      enojo: "😤 Respira hondo, el enojo pasará. Tú tienes el control.",
-      miedo: "🌈 El miedo es una emoción válida, recuerda que puedes afrontarlo con calma. Respira profundo, concéntrate en el presente y date permiso de avanzar poco a poco.",
-      neutral: "😌 Todo tranquilo, aprovecha este momento de calma.",
-      negativo: "💭 Sé que no es fácil, pero cada día es una nueva oportunidad.",
-      amor: "❤️ Qué hermoso que sientas amor. Cuida ese sentimiento y compártelo con quienes lo hacen especial.",
-      no_detectado: "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido."
+        positivo: "🌟 ¡Excelente! Sigue disfrutando de esta buena energía.",
+        alegría: "😃 ¡Qué bonito que estés alegre! Disfruta ese momento.",
+        tristeza: "💙 Recuerda que está bien sentirse triste. Tómate un descanso y cuida de ti.",
+        enojo: "😤 Respira hondo, el enojo pasará. Tú tienes el control.",
+        miedo: "🌈 El miedo es una emoción válida, recuerda que puedes afrontarlo con calma. Respira profundo, concéntrate en el presente y date permiso de avanzar poco a poco.",
+        neutral: "😌 Todo tranquilo, aprovecha este momento de calma.",
+        negativo: "💭 Sé que no es fácil, pero cada día es una nueva oportunidad.",
+        amor: "❤️ Qué hermoso que sientas amor. Cuida ese sentimiento y compártelo con quienes lo hacen especial.",
+        sorpresa: "😲 ¡Qué sorpresa! A veces lo inesperado trae nuevas oportunidades.",
+        calma: "🌿 Qué lindo que te sientas en calma. Disfruta de esta tranquilidad.",
+        no_detectado: "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido."
     };
 
     // 📌 Construir resultado
