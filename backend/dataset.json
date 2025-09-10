@@ -2922,7 +2922,7 @@
         "orgulloso","orgullosa","dichoso","dichosa","animoso","animosa","reconfortado","reconfortada",
         "divertido","diversión","satisfecho","satisfecha","alegría","entusiasmante",
         "extasiado","extasiada","radiante","jubileo","festivo","celebrar","esperanzador",
-        "emocionante","optimismo","vivaz","exultante","sonrisa","felicidad","emocion"
+        "emocionante","optimismo","vivaz","exultante","sonrisa","felicidad","emocion","alegría"
       ],
       "sentimiento": "alegría"
     },
@@ -2936,7 +2936,7 @@
         "angustiado","angustiada","abrumado","abrumada","inseguro","insegura",
         "desvalido","desvalida","desgarrado","desgarrada","nostalgia","pesar",
         "pena","llanto","melancolía","lágrimas","afligido","afligida","desconsuelo",
-        "desolación","morriña","apatía","dolor","soledad","abatimiento","congoja"
+        "desolación","morriña","apatía","dolor","soledad","abatimiento","congoja","tristeza"
       ],
       "sentimiento": "tristeza"
     },
@@ -2950,7 +2950,7 @@
         "fastidiado","fastidiada","explosivo","explosiva","ardido","ardida","agresivo","agresiva",
         "coraje","rabia","malhumorado","malhumorada","impaciente","furia","enoja",
         "intolerante","airado","airada","alterado","colérico","exasperado","iracundo",
-        "rabioso","rabieta","enojo","bronca","indignación","irritación","resentimiento"
+        "rabioso","rabieta","enojo","bronca","indignación","irritación","resentimiento","enojo"
       ],
       "sentimiento": "enojo"
     },
@@ -2963,7 +2963,7 @@
         "tembloroso","temblorosa","dubitativo","dubitativa","desesperado","desesperada",
         "vulnerable","estresado","estresada","aturdido","aturdida","desconcertado","desconcertada",
         "inquieto","inquieta","sobresaltado","sobresaltada","paranoico","paranoica",
-        "recelo","temor","incertidumbre","ansiedad","espanto","susto","alarma", "ansioso","ansiosa","ansiedad"
+        "recelo","temor","incertidumbre","ansiedad","espanto","susto","alarma", "ansioso","ansiosa","ansiedad", "miedo"
       ],
       "sentimiento": "miedo"
     },
@@ -2974,7 +2974,7 @@
         "despreocupado","despreocupada","moderado","moderada","pasivo","pasiva",
         "imparcial","desinteresado","desinteresada","cotidiano","monótono","rutinario","común",
         "corriente","habitual","regular","sosegado","estándar","templado","mesurado",
-        "ponderado","balanceado","neutralidad"
+        "ponderado","balanceado","neutralidad", "neutral"
       ],
       "sentimiento": "neutral"
     },
@@ -3032,7 +3032,7 @@
         "admirado",
         "admirada",
         "maravillado",
-        "maravillada"
+        "maravillada", "sorpresa"
       ],
       "sentimiento": "sorpresa"
     },
