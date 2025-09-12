@@ -148,7 +148,8 @@ app.post("/analizar", async (req, res) => {
         amor: "❤️ Qué hermoso que sientas amor. Cuida ese sentimiento y compártelo con quienes lo hacen especial.",
         sorpresa: "😲 ¡Qué sorpresa! A veces lo inesperado trae nuevas oportunidades.",
         calma: "🌿 Qué lindo que te sientas en calma. Disfruta de esta tranquilidad.",
-        no_detectado: "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido."
+        no_detectado: "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido.",
+        angustia: "😰 La angustia puede ser muy difícil, respira profundo y date un momento para calmarte.",
     };
 
     // 📌 Construir resultado
