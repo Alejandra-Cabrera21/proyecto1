@@ -352,7 +352,7 @@
         "lamentable","desafortunado","desafortunada","patético","patética","derrotado","derrotada",
         "sombrío","sombría","oscuro","tóxico","pobre","malo","malsano","ineficaz","destructivo","destructiva",
         "doloroso","pesimista","decepcionante","lastimoso","trágico","horripilante","amargo","inservible",
-        "nefasto","ruinoso","deteriorado","deplorable","inadecuado","inservible","catastrófico"
+        "nefasto","ruinoso","deteriorado","deplorable","inadecuado","inservible","catastrófico", "matar"
       ],
       "sentimiento": "negativo"
     },
@@ -363,7 +363,7 @@
         "conquista","atracción","coqueto","coqueta","admiración","calidez","bondad","gratitud","intimidad","compañía",
         "complicidad","protección","abrazo","beso","ternurita","romántico","romántica","detalles","sentimiento","entrega","pertenencia",
         "querencia","afectuoso","afectuosa","dulce","amistoso","amistosa","gentileza","compañerismo","solidaridad","unión",
-        "noviazgo","matrimonio","pareja","cónyuge","amante","apasionado","apasionada","sensual","tierno","tierna",
+        "noviazgo","matrimonio","cónyuge","amante","apasionado","apasionada","sensual","tierno","tierna",
         "besitos","abrazos","caricias","detallista","cómplice","confianza","lealtad","fidelidad","pureza",
         "devoto","devota","compañero","compañera","incondicional","seducción","atrayente","seductor","seductora",
         "ilusión","idolatría","idolatrado","idolatrada","afectivo","amoroso","amable","empático","fraternidad","amar","amo","querida","querido","quiero"
