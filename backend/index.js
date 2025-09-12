@@ -68,7 +68,7 @@ app.post("/analizar", async (req, res) => {
                       Clasifica el sentimiento principal que transmite un mensaje en una sola categoría emocional. 
                       Responde ÚNICAMENTE en formato JSON válido con la estructura {"sentimiento":"etiqueta"}.
 
-                      Las etiquetas válidas son: positivo, negativo, neutral, tristeza, alegría, enojo, miedo, amor, sorpresa, calma.
+                      Las etiquetas válidas son: positivo, negativo, neutral, tristeza, alegría, enojo, miedo, amor, sorpresa, calma, angustia.
                       Si no puedes identificar claramente la emoción, responde {"sentimiento":"no_detectado"}.
 
                       No escribas explicaciones, solo devuelve JSON.
