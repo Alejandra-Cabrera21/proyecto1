@@ -49,7 +49,7 @@ app.post("/analizar", async (req, res) => {
 
     // 1️⃣ Construir ejemplos
     let ejemplosTexto = ejemplos
-      .map(e => `Texto: "${e.texto}" → {"sentimiento":"${e.sentimiento}"}`)
+      .map(e => `Texto: "${e.texto}" → {"sentimientos":["${e.sentimiento}"]}`)
       .join("\n");
 
     // 2️⃣ Llamada a OpenAI
@@ -65,27 +65,18 @@ app.post("/analizar", async (req, res) => {
           {
             role: "system",
             content: `Eres un analizador de emociones en ESPAÑOL. 
-                      Clasifica el sentimiento principal que transmite un mensaje en una sola categoría emocional. 
-                      Responde ÚNICAMENTE en formato JSON válido con la estructura {"sentimiento":"etiqueta"}.
+                      Clasifica TODAS las emociones relevantes que transmite un mensaje.
+                      Responde ÚNICAMENTE en formato JSON válido con la estructura {"sentimientos":["etiqueta1","etiqueta2",...]}.
 
                       Las etiquetas válidas son: positivo, negativo, neutral, tristeza, alegría, enojo, miedo, amor, sorpresa, calma, angustia, incertidumbre.
-                      Si no puedes identificar claramente la emoción, responde {"sentimiento":"no_detectado"}.
+                      Si no puedes identificar ninguna emoción, responde {"sentimientos":["no_detectado"]}.
 
                       No escribas explicaciones, solo devuelve JSON.
 
                       Ejemplos:
-                      "Estoy feliz porque aprobé un examen" -> {"sentimiento":"alegría"}
-                      "Siento un vacío profundo en mi corazón" -> {"sentimiento":"tristeza"}
-                      "Estoy muy enojada por la injusticia" -> {"sentimiento":"enojo"}
-                      "Me da miedo hablar en público" -> {"sentimiento":"miedo"}
-                      "No tengo ni alegría ni tristeza, solo estoy aquí" -> {"sentimiento":"neutral"}
-                      "Nada me sale bien, todo está perdido" -> {"sentimiento":"negativo"}
-                      "Siento un profundo cariño por mi familia" -> {"sentimiento":"amor"}
-                      "Me quedé en shock por lo que ocurrió" -> {"sentimiento":"sorpresa"}
-                      "Hoy me siento tranquilo y en paz" -> {"sentimiento":"calma"}
-                      "Hoy me siento muy motivado y lleno de energía" -> {"sentimiento":"positivo"}
-                      "Tengo un nudo en la garganta y no puedo dejar de sentir que algo malo va a pasar." -> {"sentimiento":"angustia"}
-                      "No se que pasara de ahora en adelante." -> {"sentimiento":"incertidumbre"}`
+                      "Estoy feliz porque aprobé un examen" -> {"sentimientos":["alegría"]}
+                      "Estoy triste pero también agradecido" -> {"sentimientos":["tristeza","amor"]}
+                      "Tengo un nudo en la garganta y me preocupa el futuro" -> {"sentimientos":["angustia","incertidumbre"]}`
           },
 
           {
@@ -97,7 +88,7 @@ app.post("/analizar", async (req, res) => {
             content: mensaje
           }
         ],
-        max_completion_tokens: 200 ,
+        max_completion_tokens: 200,
         temperature: 1,
         response_format: { type: "json_object" }
       }),
@@ -106,60 +97,61 @@ app.post("/analizar", async (req, res) => {
     const data = await response.json();
     console.log("🔎 Respuesta cruda OpenAI:", data);
 
-    //  Parsear JSON seguro
-  let sentimiento = "no_detectado";
-  try {
-    // cuando response_format=json_object, content viene como string plano
-    const raw = data.choices?.[0]?.message?.content || "";
-    console.log("📝 Texto recibido:", raw);
+    // 3️⃣ Parsear JSON seguro
+    let sentimientos = ["no_detectado"];
+    try {
+      const raw = data.choices?.[0]?.message?.content || "";
+      console.log("📝 Texto recibido:", raw);
 
-    const parsed = JSON.parse(raw);   // intenta parsear JSON
-    if (parsed.sentimiento) {
-      sentimiento = parsed.sentimiento.toLowerCase().trim();
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed.sentimientos) && parsed.sentimientos.length > 0) {
+        sentimientos = parsed.sentimientos.map(s => s.toLowerCase().trim());
+      }
+    } catch (err) {
+      console.warn("⚠️ No vino JSON, buscando en texto...");
+      const raw = (data.choices?.[0]?.message?.content || "").toLowerCase();
+      const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo","amor","sorpresa","calma","angustia","incertidumbre"];
+      sentimientos = etiquetas.filter(e => raw.includes(e));
+      if (sentimientos.length === 0) sentimientos = ["no_detectado"];
     }
-  } catch (err) {
-    console.warn("⚠️ No vino JSON, buscando en texto...");
-    const raw = (data.choices?.[0]?.message?.content || "").toLowerCase();
-    const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo","amor","sorpresa","calma", "angustia", "incertidumbre"];
-    const encontrada = etiquetas.find(e => raw.includes(e));
-    sentimiento = encontrada || "no_detectado";
-  }
-
-
 
     // 4️⃣ Fallback con dataset.palabras
-    if (sentimiento === "no_detectado") {
+    if (sentimientos.includes("no_detectado")) {
       for (const entrada of palabras) {
         if (entrada.palabras.some(p => mensaje.toLowerCase().includes(p))) {
-          sentimiento = entrada.sentimiento;
-          break;
+          if (!sentimientos.includes(entrada.sentimiento)) {
+            sentimientos.push(entrada.sentimiento);
+          }
         }
       }
+      sentimientos = [...new Set(sentimientos)];
     }
 
     // 5️⃣ Feedback
     const feedbacks = {
-        positivo: "🌟 ¡Excelente! Sigue disfrutando de esta buena energía.",
-        alegría: "😃 ¡Qué bonito que estés alegre! Disfruta ese momento.",
-        tristeza: "💙 Recuerda que está bien sentirse triste. Tómate un descanso y cuida de ti.",
-        enojo: "😤 Respira hondo, el enojo pasará. Tú tienes el control.",
-        miedo: "🌈 El miedo es una emoción válida, recuerda que puedes afrontarlo con calma. Respira profundo, concéntrate en el presente y date permiso de avanzar poco a poco.",
-        neutral: "😌 Todo tranquilo, aprovecha este momento de calma.",
-        negativo: "💭 Sé que no es fácil, pero cada día es una nueva oportunidad.",
-        amor: "❤️ Qué hermoso que sientas amor. Cuida ese sentimiento y compártelo con quienes lo hacen especial.",
-        sorpresa: "😲 ¡Qué sorpresa! A veces lo inesperado trae nuevas oportunidades.",
-        calma: "🌿 Qué lindo que te sientas en calma. Disfruta de esta tranquilidad.",
-        no_detectado: "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido.",
-        angustia: "😰 La angustia puede ser muy difícil, respira profundo y date un momento para calmarte.",
-        incertidumbre: "🤔 Es normal sentir incertidumbre, no siempre tenemos todas las respuestas. Confía en tu proceso y da un paso a la vez."
+      positivo: "🌟 ¡Excelente! Sigue disfrutando de esta buena energía.",
+      alegría: "😃 ¡Qué bonito que estés alegre! Disfruta ese momento.",
+      tristeza: "💙 Recuerda que está bien sentirse triste. Tómate un descanso y cuida de ti.",
+      enojo: "😤 Respira hondo, el enojo pasará. Tú tienes el control.",
+      miedo: "🌈 El miedo es una emoción válida, recuerda que puedes afrontarlo con calma.",
+      neutral: "😌 Todo tranquilo, aprovecha este momento de calma.",
+      negativo: "💭 Sé que no es fácil, pero cada día es una nueva oportunidad.",
+      amor: "❤️ Qué hermoso que sientas amor. Cuida ese sentimiento y compártelo con quienes lo hacen especial.",
+      sorpresa: "😲 ¡Qué sorpresa! A veces lo inesperado trae nuevas oportunidades.",
+      calma: "🌿 Qué lindo que te sientas en calma. Disfruta de esta tranquilidad.",
+      no_detectado: "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido.",
+      angustia: "😰 La angustia puede ser muy difícil, respira profundo y date un momento para calmarte.",
+      incertidumbre: "🤔 Es normal sentir incertidumbre, no siempre tenemos todas las respuestas. Confía en tu proceso y da un paso a la vez."
     };
+
+    const feedbackSeleccionados = sentimientos.map(s => feedbacks[s] || feedbacks.no_detectado);
 
     // 📌 Construir resultado
     const resultado = {
       usuario,
       mensaje,
-      sentimiento,
-      feedback: feedbacks[sentimiento] || feedbacks.no_detectado,
+      sentimientos,
+      feedback: feedbackSeleccionados,
       fecha: new Date().toISOString()
     };
 
@@ -187,7 +179,9 @@ app.get("/metricas", (req, res) => {
   const metricas = {};
 
   historial.forEach(item => {
-    metricas[item.sentimiento] = (metricas[item.sentimiento] || 0) + 1;
+    item.sentimientos.forEach(s => {
+      metricas[s] = (metricas[s] || 0) + 1;
+    });
   });
 
   res.json({
@@ -206,7 +200,9 @@ app.get("/resumen", (req, res) => {
   // Contar emociones
   const conteo = {};
   historial.forEach(item => {
-    conteo[item.sentimiento] = (conteo[item.sentimiento] || 0) + 1;
+    item.sentimientos.forEach(s => {
+      conteo[s] = (conteo[s] || 0) + 1;
+    });
   });
 
   // Encontrar la emoción más frecuente
