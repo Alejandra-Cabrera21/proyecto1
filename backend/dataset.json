@@ -44,6 +44,7 @@
     { "texto": "me siento triste y todo me parece aburrido.", "sentimiento": "tristeza" },
     { "texto": "no tengo ganas de nada, no hay nada porque emocionarse.", "sentimiento": "tristeza" },
     { "texto": "me siento mal.", "sentimiento": "tristeza" },
+    { "texto": "Me duele recordar lo que tuve y ya no está", "sentimiento": "tristeza" },
 
 
     { "texto": "Estoy muy molesto por lo que pasó.", "sentimiento": "enojo" },
@@ -234,7 +235,8 @@
     {"texto": "La angustia aparece de repente y me paraliza.", "sentimiento": "angustia"},
     {"texto": "Estoy angustiado por no poder controlar nada.", "sentimiento": "angustia"},
     {"texto": "La angustia me roba la paz y la calma.", "sentimiento": "angustia"},
-    {"text  o": "Vivo con angustia como si algo malo fuera a pasar.", "sentimiento": "angustia"}
+    {"text  o": "Vivo con angustia como si algo malo fuera a pasar.", "sentimiento": "angustia"},
+    {"text  o": "Tengo un nudo en la garganta y no puedo dejar de sentir que algo malo va a pasar", "sentimiento": "angustia"}
   ],
   "palabras": [
     {
