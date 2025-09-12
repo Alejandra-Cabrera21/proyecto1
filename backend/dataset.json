@@ -43,6 +43,8 @@
     { "texto": "Estoy atrapado en una tristeza profunda.", "sentimiento": "tristeza" },
     { "texto": "me siento triste y todo me parece aburrido.", "sentimiento": "tristeza" },
     { "texto": "no tengo ganas de nada, no hay nada porque emocionarse.", "sentimiento": "tristeza" },
+    { "texto": "me siento mal.", "sentimiento": "tristeza" },
+
 
     { "texto": "Estoy muy molesto por lo que pasó.", "sentimiento": "enojo" },
     { "texto": "Nada salió como lo esperaba y eso me irrita.", "sentimiento": "enojo" },
@@ -65,6 +67,7 @@
     { "texto": "Estoy colmado de tanta presión.", "sentimiento": "enojo" },
     { "texto": "Me da coraje que me ignoren.", "sentimiento": "enojo" },
 
+    { "texto": "estoy asustada por lo que pueda suceder.", "sentimiento": "miedo" },
     { "texto": "Tengo miedo de lo que pueda pasar mañana.", "sentimiento": "miedo" },
     { "texto": "Siento mucha ansiedad cuando pienso en el futuro.", "sentimiento": "miedo" },
     { "texto": "Me preocupa no estar a la altura.", "sentimiento": "miedo" },
