@@ -45,7 +45,7 @@
     { "texto": "no tengo ganas de nada, no hay nada porque emocionarse.", "sentimiento": "tristeza" },
     { "texto": "me siento mal.", "sentimiento": "tristeza" },
     { "texto": "Me duele recordar lo que tuve y ya no está", "sentimiento": "tristeza" },
-    { "texto": "No me siento feliz en este momento.", "sentimiento": "tristeza" },
+    { "texto": "no me siento tan feliz ahora", "sentimiento": "tristeza" },
     { "texto": "Ya no estoy alegre como antes.", "sentimiento": "tristeza" },
     { "texto": "No logro sentir alegría aunque lo intente.", "sentimiento": "tristeza" },
     { "texto": "Hoy no encuentro motivos para sonreír.", "sentimiento": "tristeza" },
