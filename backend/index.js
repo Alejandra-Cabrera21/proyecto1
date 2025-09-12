@@ -83,7 +83,8 @@ app.post("/analizar", async (req, res) => {
                       "Siento un profundo cariño por mi familia" -> {"sentimiento":"amor"}
                       "Me quedé en shock por lo que ocurrió" -> {"sentimiento":"sorpresa"}
                       "Hoy me siento tranquilo y en paz" -> {"sentimiento":"calma"}
-                      "Hoy me siento muy motivado y lleno de energía" -> {"sentimiento":"positivo"}`
+                      "Hoy me siento muy motivado y lleno de energía" -> {"sentimiento":"positivo"}
+                      "Tengo un nudo en la garganta y no puedo dejar de sentir que algo malo va a pasar." -> {"sentimiento":"angustia"}`
           },
 
           {
