@@ -21,11 +21,3 @@ button {
 button:hover {
   background: #0056b3;
 }
-
-button:nth-of-type(1) {
-  background: #FF4081; /* Rosa para grabar */
-}
-
-button:nth-of-type(1):hover {
-  background: #E91E63;
-}
