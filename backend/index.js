@@ -104,7 +104,7 @@ app.post("/analizar", async (req, res) => {
     const data = await response.json();
     console.log("🔎 Respuesta cruda OpenAI:", data);
 
-    // 3️⃣ Parsear JSON seguro
+    //  Parsear JSON seguro
     let sentimiento = "no_detectado";
     try {
       const raw = data.choices?.[0]?.message?.content?.[0]?.text || "";
@@ -116,11 +116,12 @@ app.post("/analizar", async (req, res) => {
       }
     } catch (err) {
       console.warn("⚠️ No vino JSON, buscando en texto...");
-      const raw = (data.choices?.[0]?.message?.content?.[0]?.text || "").toLowerCase();
+      const raw = data.choices?.[0]?.message?.content?.[0]?.text?.toLowerCase() || "";
       const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo","amor","sorpresa","calma"];
       const encontrada = etiquetas.find(e => raw.includes(e));
       sentimiento = encontrada || "no_detectado";
     }
+
 
 
     // 4️⃣ Fallback con dataset.palabras
