@@ -105,19 +105,21 @@ app.post("/analizar", async (req, res) => {
 
     // 3️⃣ Parsear JSON seguro
   let sentimiento = "no_detectado";
-  try {
-    const raw = data.choices?.[0]?.message?.content?.[0]?.text || "";
-    const parsed = JSON.parse(raw);
-    if (parsed.sentimiento) {
-      sentimiento = parsed.sentimiento.toLowerCase().trim();
-    }
-  } catch (err) {
-    console.warn("⚠️ No vino JSON, buscando en texto...");
-    const raw = (data.choices?.[0]?.message?.content?.[0]?.text || "").toLowerCase();
-    const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo","amor","sorpresa","calma"];
-    const encontrada = etiquetas.find(e => raw.includes(e));
-    sentimiento = encontrada || "no_detectado";
+try {
+  const raw = data.choices?.[0]?.message?.content?.[0]?.text || "";
+  console.log("📝 Texto recibido:", raw);
+
+  const parsed = JSON.parse(raw);   // intenta parsear JSON
+  if (parsed.sentimiento) {
+    sentimiento = parsed.sentimiento.toLowerCase().trim();
   }
+} catch (err) {
+  console.warn("⚠️ No vino JSON, buscando en texto...");
+  const raw = (data.choices?.[0]?.message?.content?.[0]?.text || "").toLowerCase();
+  const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo","amor","sorpresa","calma"];
+  const encontrada = etiquetas.find(e => raw.includes(e));
+  sentimiento = encontrada || "no_detectado";
+}
 
     // 4️⃣ Fallback con dataset.palabras
     if (sentimiento === "no_detectado") {
