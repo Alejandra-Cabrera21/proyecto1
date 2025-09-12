@@ -156,6 +156,7 @@
     { "texto": "Es un ciclo sin fin de malas experiencias.", "sentimiento": "negativo" },
     { "texto": "No puedo salir de este estado negativo.", "sentimiento": "negativo" },
     { "texto": "Siento que todo va de mal en peor.", "sentimiento": "negativo" },
+    { "texto": "Siento que nada me sale bien.", "sentimiento": "negativo" },
 
     { "texto": "Te amo con todo mi corazón.", "sentimiento": "amor" },
     { "texto": "Eres lo más importante en mi vida.", "sentimiento": "amor" },
@@ -240,7 +241,8 @@
     {"texto": "Estoy angustiado por no poder controlar nada.", "sentimiento": "angustia"},
     {"texto": "La angustia me roba la paz y la calma.", "sentimiento": "angustia"},
     {"texto": "Vivo con angustia como si algo malo fuera a pasar.", "sentimiento": "angustia"},
-    {"texto": "Tengo un nudo en la garganta y no puedo dejar de sentir que algo malo va a pasar", "sentimiento": "angustia"},
+    {"texto": "Tengo un nudo en la garganta y no puedo dejar de sentir que algo malo va a pasar.", "sentimiento": "angustia"},
+    {"texto": "Tengo un nudo en la garganta y no sé por qué.", "sentimiento": "angustia"},
 
     {"texto": "No sé qué pasará mañana y eso me genera mucha incertidumbre.", "sentimiento": "incertidumbre"},
     {"texto": "Estoy dudando de todas mis decisiones últimamente.", "sentimiento": "incertidumbre"},
