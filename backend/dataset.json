@@ -235,8 +235,30 @@
     {"texto": "La angustia aparece de repente y me paraliza.", "sentimiento": "angustia"},
     {"texto": "Estoy angustiado por no poder controlar nada.", "sentimiento": "angustia"},
     {"texto": "La angustia me roba la paz y la calma.", "sentimiento": "angustia"},
-    {"text  o": "Vivo con angustia como si algo malo fuera a pasar.", "sentimiento": "angustia"},
-    {"text  o": "Tengo un nudo en la garganta y no puedo dejar de sentir que algo malo va a pasar", "sentimiento": "angustia"}
+    {"texto": "Vivo con angustia como si algo malo fuera a pasar.", "sentimiento": "angustia"},
+    {"texto": "Tengo un nudo en la garganta y no puedo dejar de sentir que algo malo va a pasar", "sentimiento": "angustia"},
+
+    {"texto": "No sé qué pasará mañana y eso me genera mucha incertidumbre.", "sentimiento": "incertidumbre"},
+    {"texto": "Estoy dudando de todas mis decisiones últimamente.", "sentimiento": "incertidumbre"},
+    {"texto": "Siento que estoy caminando sin rumbo claro.", "sentimiento": "incertidumbre"},
+    {"texto": "No tengo claro si lo que estoy haciendo es lo correcto.", "sentimiento": "incertidumbre"},
+    {"texto": "Cada día me levanto sin saber qué esperar.", "sentimiento": "incertidumbre"},
+    {"texto": "Me invade la duda sobre lo que depara el futuro.", "sentimiento": "incertidumbre"},
+    {"texto": "No sé si debo seguir adelante o detenerme.", "sentimiento": "incertidumbre"},
+    {"texto": "Siento que estoy en un punto de mi vida lleno de dudas.", "sentimiento": "incertidumbre"},
+    {"texto": "Me cuesta tomar decisiones por tanta inseguridad.", "sentimiento": "incertidumbre"},
+    {"texto": "No tengo certeza de nada y eso me inquieta.", "sentimiento": "incertidumbre"},
+    {"texto": "Estoy atrapado entre opciones y no sé cuál elegir.", "sentimiento": "incertidumbre"},
+    {"texto": "Todo me parece confuso y poco claro.", "sentimiento": "incertidumbre"},
+    {"texto": "Me siento inseguro sobre mi camino.", "sentimiento": "incertidumbre"},
+    {"texto": "No sé en quién confiar realmente.", "sentimiento": "incertidumbre"},
+    {"texto": "Cada paso que doy está lleno de dudas.", "sentimiento": "incertidumbre"},
+    {"texto": "Me preocupa no saber si hice lo correcto.", "sentimiento": "incertidumbre"},
+    {"texto": "Estoy indeciso y no logro encontrar claridad.", "sentimiento": "incertidumbre"},
+    {"texto": "La falta de certeza me genera mucha angustia.", "sentimiento": "incertidumbre"},
+    {"texto": "Me siento perdido en un mar de dudas.", "sentimiento": "incertidumbre"},
+    {"texto": "Todo es tan incierto que no sé qué esperar del futuro.", "sentimiento": "incertidumbre"},
+    {"texto": "No se que pasara de ahora en adelante.", "sentimiento": "incertidumbre"}
   ],
   "palabras": [
     {
@@ -368,7 +390,16 @@
         "desesperante","desesperanzado","desesperanzada","inquietante"
       ],
       "sentimiento": "angustia"
+    },
+    {
+      "palabras": [
+        "incierto","incierta","indeciso","indecisa","dudoso","dudosa",
+        "confuso","confusa","inseguro","insegura","desorientado","desorientada",
+        "desconcertado","desconcertada","perplejo","perpleja","vacilante","ambiguo","ambigua",
+        "incierto","incertidumbre","duda","desconfianza","titubeo","temor al futuro",
+        "inestabilidad","desconfiado","desconfiada","desconcertante","imprevisible"
+      ],
+      "sentimiento": "incertidumbre"
     }
-
   ]
 }
