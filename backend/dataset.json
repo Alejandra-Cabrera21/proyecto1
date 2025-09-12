@@ -213,7 +213,28 @@
     { "texto": "La calma me ayuda a pensar con claridad.", "sentimiento": "calma" },
     { "texto": "Estoy en armonía conmigo mismo.", "sentimiento": "calma" },
     { "texto": "El día transcurre con serenidad.", "sentimiento": "calma" },
-    { "texto": "Siento un equilibrio perfecto dentro de mí.", "sentimiento": "calma" }
+    { "texto": "Siento un equilibrio perfecto dentro de mí.", "sentimiento": "calma" },
+
+    {"texto": "Siento una angustia que no me deja respirar.", "sentimiento": "angustia"},
+    {"texto": "Tengo un nudo en la garganta por tanta angustia.", "sentimiento": "angustia"},
+    {"texto": "Me invade una sensación de angustia sin motivo.", "sentimiento": "angustia"},
+    {"texto": "La angustia me acompaña incluso en los momentos tranquilos.", "sentimiento": "angustia"},
+    {"texto": "No puedo concentrarme, la angustia ocupa mi mente.", "sentimiento": "angustia"},
+    {"texto": "La angustia me despierta en medio de la noche.", "sentimiento": "angustia"},
+    {"texto": "Tengo una presión en el pecho causada por la angustia.", "sentimiento": "angustia"},
+    {"texto": "Siento angustia cuando pienso en el futuro.", "sentimiento": "angustia"},
+    {"texto": "No encuentro alivio a esta angustia constante.", "sentimiento": "angustia"},
+    {"texto": "La angustia me hace sentir atrapado.", "sentimiento": "angustia"},
+    {"texto": "Mi mente no para y me llena de angustia.", "sentimiento": "angustia"},
+    {"texto": "Vivo con una angustia que no sé explicar.", "sentimiento": "angustia"},
+    {"texto": "La angustia me oprime el corazón.", "sentimiento": "angustia"},
+    {"texto": "Cada decisión me genera una angustia enorme.", "sentimiento": "angustia"},
+    {"texto": "Siento angustia por cosas pequeñas y grandes.", "sentimiento": "angustia"},
+    {"texto": "No logro calmar la angustia que me invade.", "sentimiento": "angustia"},
+    {"texto": "La angustia aparece de repente y me paraliza.", "sentimiento": "angustia"},
+    {"texto": "Estoy angustiado por no poder controlar nada.", "sentimiento": "angustia"},
+    {"texto": "La angustia me roba la paz y la calma.", "sentimiento": "angustia"},
+    {"text  o": "Vivo con angustia como si algo malo fuera a pasar.", "sentimiento": "angustia"}
   ],
   "palabras": [
     {
@@ -239,12 +260,12 @@
         "llorando","desesperanzado","desesperanzada","infeliz","desdichado","desdichada",
         "abatimiento","pesimista","apagado","apagada","desconsolado","desconsolada",
         "apático","apática","vulnerable","solitario","solitaria","dolido","dolida",
-        "angustiado","angustiada","abrumado","abrumada","inseguro","insegura",
         "desvalido","desvalida","desgarrado","desgarrada","nostalgia","pesar",
         "pena","llanto","melancolía","lágrimas","afligido","afligida","desconsuelo",
-        "desolación","morriña","apatía","dolor","soledad","abatimiento","congoja","tristeza"
+        "desolación","morriña","apatía","dolor","soledad","congoja","tristeza"
       ],
       "sentimiento": "tristeza"
+
     },
     {
       "palabras": [
@@ -334,6 +355,18 @@
         "armonía"
       ],
       "sentimiento": "calma"
-  }
+    },
+    {
+      "palabras": [
+        "angustia","angustiado","angustiada","angustioso","angustiosa",
+        "intranquilo","intranquila","desesperado","desesperada",
+        "desasosiego","desesperación","inquietud","opresión","sufrimiento",
+        "nerviosismo","ansia","desvelo","ahogo","preocupación intensa",
+        "sofoco","zozobra","desvelo","ahogado","ahogada","estresado","estresada",
+        "desesperante","desesperanzado","desesperanzada","inquietante"
+      ],
+      "sentimiento": "angustia"
+    }
+
   ]
 }
