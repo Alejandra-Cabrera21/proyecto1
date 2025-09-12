@@ -27,10 +27,22 @@ async function analizar() {
 
     const data = await response.json();
 
+    // 🔹 Mostrar múltiples emociones y feedbacks en lista
+    let feedbackList = "";
+    if (Array.isArray(data.sentimientos)) {
+      feedbackList = "<ul>";
+      data.sentimientos.forEach(s => {
+        feedbackList += `<li><b>${s.sentimiento}:</b> ${s.feedback}</li>`;
+      });
+      feedbackList += "</ul>";
+    } else {
+      feedbackList = `<p><b>${data.sentimiento || "No detectado"}:</b> ${data.feedback}</p>`;
+    }
+
     document.getElementById("resultado").innerHTML = `
       <p><b>Mensaje:</b> ${mensaje}</p>
-      <p><b>Sentimiento:</b> ${data.sentimiento || "No detectado"}</p>
-      <p><b>Retroalimentación:</b> ${data.feedback}</p>
+      <p><b>Sentimientos detectados:</b></p>
+      ${feedbackList}
     `;
 
     // 📌 Actualizar métricas cada vez que se analiza un mensaje
