@@ -95,8 +95,8 @@ app.post("/analizar", async (req, res) => {
             content: mensaje
           }
         ],
-        max_completion_tokens: 50 ,
-        temperature: 0
+        max_completion_tokens: 100 ,
+        temperature: 1
       }),
     });
 
