@@ -68,7 +68,7 @@ app.post("/analizar", async (req, res) => {
                       Clasifica el sentimiento principal que transmite un mensaje en una sola categoría emocional. 
                       Responde ÚNICAMENTE en formato JSON válido con la estructura {"sentimiento":"etiqueta"}.
 
-                      Las etiquetas válidas son: positivo, negativo, neutral, tristeza, alegría, enojo, miedo, amor, sorpresa, calma, angustia.
+                      Las etiquetas válidas son: positivo, negativo, neutral, tristeza, alegría, enojo, miedo, amor, sorpresa, calma, angustia, incertidumbre.
                       Si no puedes identificar claramente la emoción, responde {"sentimiento":"no_detectado"}.
 
                       No escribas explicaciones, solo devuelve JSON.
@@ -84,7 +84,8 @@ app.post("/analizar", async (req, res) => {
                       "Me quedé en shock por lo que ocurrió" -> {"sentimiento":"sorpresa"}
                       "Hoy me siento tranquilo y en paz" -> {"sentimiento":"calma"}
                       "Hoy me siento muy motivado y lleno de energía" -> {"sentimiento":"positivo"}
-                      "Tengo un nudo en la garganta y no puedo dejar de sentir que algo malo va a pasar." -> {"sentimiento":"angustia"}`
+                      "Tengo un nudo en la garganta y no puedo dejar de sentir que algo malo va a pasar." -> {"sentimiento":"angustia"}
+                      "No se que pasara de ahora en adelante." -> {"sentimiento":"incertidumbre"}`
           },
 
           {
@@ -119,7 +120,7 @@ app.post("/analizar", async (req, res) => {
   } catch (err) {
     console.warn("⚠️ No vino JSON, buscando en texto...");
     const raw = (data.choices?.[0]?.message?.content || "").toLowerCase();
-    const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo","amor","sorpresa","calma"];
+    const etiquetas = ["positivo","negativo","neutral","tristeza","alegría","enojo","miedo","amor","sorpresa","calma", "angustia", "incertidumbre"];
     const encontrada = etiquetas.find(e => raw.includes(e));
     sentimiento = encontrada || "no_detectado";
   }
@@ -150,6 +151,7 @@ app.post("/analizar", async (req, res) => {
         calma: "🌿 Qué lindo que te sientas en calma. Disfruta de esta tranquilidad.",
         no_detectado: "🤔 No logré identificar claramente tu emoción, pero recuerda: cada sentimiento es válido.",
         angustia: "😰 La angustia puede ser muy difícil, respira profundo y date un momento para calmarte.",
+        incertidumbre: "🤔 Es normal sentir incertidumbre, no siempre tenemos todas las respuestas. Confía en tu proceso y da un paso a la vez."
     };
 
     // 📌 Construir resultado
