@@ -97,7 +97,7 @@ app.post("/analizar", async (req, res) => {
             content: mensaje
           }
         ],
-        max_completion_tokens: 200 ,
+        max_completion_tokens: 200,
         temperature: 1,
         response_format: { type: "json_object" }
       }),
