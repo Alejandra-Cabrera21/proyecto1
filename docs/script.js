@@ -2,7 +2,7 @@ async function analizar() {
   const mensaje = document.getElementById("inputMensaje").value;
 
   if (!mensaje) {
-    alert("Por favor escribe un mensaje");
+    alert("Por favor escribe un mensaje o usa el micrófono 🎙️");
     return;
   }
 
@@ -103,4 +103,39 @@ async function cargarResumen() {
   } catch (err) {
     console.error("❌ Error cargando resumen:", err);
   }
+}
+
+// 🎙️ Función para reconocimiento de voz
+function iniciarVoz() {
+  if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+    alert("❌ Tu navegador no soporta reconocimiento de voz.");
+    return;
+  }
+
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const recognition = new SpeechRecognition();
+  recognition.lang = "es-ES";   // Español
+  recognition.interimResults = false; // Solo resultados finales
+  recognition.maxAlternatives = 1;
+
+  recognition.start();
+
+  recognition.onstart = () => {
+    console.log("🎙️ Escuchando...");
+  };
+
+  recognition.onerror = (event) => {
+    console.error("❌ Error de reconocimiento:", event.error);
+    alert("Ocurrió un error con el micrófono: " + event.error);
+  };
+
+  recognition.onresult = (event) => {
+    const transcript = event.results[0][0].transcript;
+    console.log("✅ Texto reconocido:", transcript);
+    document.getElementById("inputMensaje").value = transcript; // Poner texto en textarea
+  };
+
+  recognition.onend = () => {
+    console.log("🔇 Micrófono apagado.");
+  };
 }
