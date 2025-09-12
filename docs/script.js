@@ -68,14 +68,19 @@ async function cargarMetricas() {
         datasets: [{
           data: valores,
           backgroundColor: [
-            "#4CAF50", // Positivo → verde
-            "#F44336", // Negativo → rojo
-            "#FFC107", // Neutral → amarillo
-            "#2196F3", // Alegría → azul
-            "#9C27B0", // Tristeza → morado
-            "#FF5722", // Enojo → naranja fuerte
-            "#00BCD4", // Miedo → celeste
-            "#E91E63"  // Amor → rosa
+            "#4CAF50",  // Positivo → verde
+            "#F44336",  // Negativo → rojo
+            "#FFC107",  // Neutral → amarillo
+            "#2196F3",  // Alegría → azul
+            "#9C27B0",  // Tristeza → morado
+            "#FF5722",  // Enojo → naranja fuerte
+            "#00BCD4",  // Miedo → celeste
+            "#E91E63",  // Amor → rosa
+            "#FF9800",  // Sorpresa → naranja claro
+            "#8BC34A",  // Calma → verde claro
+            "#795548",  // Angustia → café
+            "#3F51B5",  // Incertidumbre → azul oscuro
+            "#CDDC39"   // no_detectado → lima
           ]
         }]
       },

@@ -4,27 +4,38 @@ new Chart(ctx, {
   type: "pie",
   data: {
     labels: [
-      "Positivo",
-      "Negativo",
-      "Neutral",
-      "Alegría",
-      "Tristeza",
-      "Enojo",
-      "Miedo",
-      "Amor"
+        "Positivo",
+        "Negativo",
+        "Neutral",
+        "Alegría",
+        "Tristeza",
+        "Enojo",
+        "Miedo",
+        "Amor",
+        "Sorpresa",
+        "Calma",
+        "Angustia",
+        "Incertidumbre",
+        "no_detectado"
     ],
     datasets: [{
       data: [10, 5, 3, 7, 4, 6, 2, 8], // 🔹 Aquí reemplazas con tus métricas reales
       backgroundColor: [
-        "#4CAF50", // Positivo → verde
-        "#F44336", // Negativo → rojo
-        "#FFC107", // Neutral → amarillo
-        "#2196F3", // Alegría → azul
-        "#9C27B0", // Tristeza → morado
-        "#FF5722", // Enojo → naranja fuerte
-        "#00BCD4", // Miedo → celeste
-        "#E91E63"  // Amor → rosa
+        "#FF6384", // rosa
+        "#36A2EB", // azul
+        "#FFCE56", // amarillo
+        "#4BC0C0", // turquesa
+        "#9966FF", // morado
+        "#FF9F40", // naranja
+        "#8BC34A", // verde claro
+        "#E91E63", // rosado fuerte
+        "#3F51B5", // azul oscuro
+        "#CDDC39", // lima
+        "#00BCD4", // celeste
+        "#9C27B0", // violeta
+        "#795548"  // café
       ]
+
     }]
   },
   options: {
