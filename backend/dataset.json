@@ -264,7 +264,8 @@
     {"texto": "La falta de certeza me genera mucha angustia.", "sentimiento": "incertidumbre"},
     {"texto": "Me siento perdido en un mar de dudas.", "sentimiento": "incertidumbre"},
     {"texto": "Todo es tan incierto que no sé qué esperar del futuro.", "sentimiento": "incertidumbre"},
-    {"texto": "No se que pasara de ahora en adelante.", "sentimiento": "incertidumbre"}
+    {"texto": "No se que pasara de ahora en adelante.", "sentimiento": "incertidumbre"},
+    {"texto": "Odio mi vida.", "sentimiento": "negativo"}
   ],
   "palabras": [
     {
