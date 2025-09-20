@@ -265,7 +265,11 @@
     {"texto": "Me siento perdido en un mar de dudas.", "sentimiento": "incertidumbre"},
     {"texto": "Todo es tan incierto que no sé qué esperar del futuro.", "sentimiento": "incertidumbre"},
     {"texto": "No se que pasara de ahora en adelante.", "sentimiento": "incertidumbre"},
-    {"texto": "Odio mi vida.", "sentimiento": "negativo"}
+    {"texto": "Odio mi vida.", "sentimiento": "negativo"},
+    {"texto": "Odio esta clase.", "sentimiento": "negativo"},
+    {"texto": "Odio a mis compañeros", "sentimiento": "negativo"},
+    {"texto": "Odio este dia", "sentimiento": "negativo"},
+    {"texto": "Odio a este profesor", "sentimiento": "negativo"}
   ],
   "palabras": [
     {
@@ -355,7 +359,7 @@
         "lamentable","desafortunado","desafortunada","patético","patética","derrotado","derrotada",
         "sombrío","sombría","oscuro","tóxico","pobre","malo","malsano","ineficaz","destructivo","destructiva",
         "doloroso","pesimista","decepcionante","lastimoso","trágico","horripilante","amargo","inservible",
-        "nefasto","ruinoso","deteriorado","deplorable","inadecuado","inservible","catastrófico", "matar"
+        "nefasto","ruinoso","deteriorado","deplorable","inadecuado","inservible","catastrófico", "matar", "odio"
       ],
       "sentimiento": "negativo"
     },
