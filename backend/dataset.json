@@ -354,14 +354,17 @@
     },
     {
       "palabras": [
-       "negativo","pésimo","negativa","pésima","fatal","desastroso","desastrosa",
-        "horrible","terrible","desalentador","desalentadora","inútil","fracasado","fracasada",
-        "lamentable","desafortunado","desafortunada","patético","patética","derrotado","derrotada",
-        "sombrío","sombría","oscuro","tóxico","pobre","malo","malsano","ineficaz","destructivo","destructiva",
-        "doloroso","pesimista","decepcionante","lastimoso","trágico","horripilante","amargo","inservible",
-        "nefasto","ruinoso","deteriorado","deplorable","inadecuado","inservible","catastrófico","matar",
-        "odio","rencor","resentimiento","encono","aversión","desprecio","antipatía",
-        "tirria","bronca","mala leche","asco","suicidar"
+      "negativo","pésimo","negativa","pésima","fatal","desastroso","desastrosa",
+      "horrible","terrible","desalentador","desalentadora","inútil","fracasado","fracasada",
+      "lamentable","desafortunado","desafortunada","patético","patética","derrotado","derrotada",
+      "sombrío","sombría","oscuro","tóxico","pobre","malo","malsano","ineficaz","destructivo","destructiva",
+      "doloroso","pesimista","decepcionante","lastimoso","trágico","horripilante","amargo","inservible",
+      "nefasto","ruinoso","deteriorado","deplorable","inadecuado","inservible","catastrófico","matar",
+      "odio","rencor","resentimiento","encono","aversión","desprecio","antipatía",
+      "tirria","bronca","mala leche","asco",
+      "suicidio","suicidarme","suicidarse","suicidar","quitarme la vida","quitarse la vida",
+      "no quiero vivir","quiero morir","terminar con mi vida","acabar con todo"
+
 
       ],
       "sentimiento": "negativo"
